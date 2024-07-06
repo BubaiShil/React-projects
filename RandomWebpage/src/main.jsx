@@ -8,14 +8,16 @@ import './index.css'
 import About from './Components/About/About'
 import Contact from './Components/Contact/Contact'
 import Home from './Components/Home/Home'
+import Github from './Components/Github/Github'
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<Home/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/contact' element={<Contact/>}/>
+      <Route path='about' element={<About/>}/>
+      <Route path='contact' element={<Contact/>}/>
+      <Route path='github' element={<Github/>}/>
     </Route>
   )
 )
