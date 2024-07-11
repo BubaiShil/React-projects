@@ -70,6 +70,65 @@ export class DatabaseService {
             throw error
         }
     }
+
+    async getDoc(slug){
+        try {
+            return await this.Databases.getDocument(
+                conf.appWriteDataID,
+                conf.appWriteDataCollection,
+                slug
+            )
+        } catch (error) {
+            throw error
+        }
+    }
+
+
+    async getDocs(queries = [Query.equal("status","active")]){
+        try {
+            return await this.Databases.listDocuments(
+                conf.appWriteDataID,
+                conf.appWriteDataCollection,
+                queries
+
+            )
+        } catch (error) {
+            throw error
+        }
+    }
+
+    //File SETUP
+    async upLoadFile(file){
+        try {
+            return await this.Bucket.createFile(
+                conf.appWriteBucketID,
+                ID.unique(),
+                file
+            )
+        } catch (error) {
+            throw error
+        }
+    }
+
+    async deleteFile(fileID){
+        try {
+            return await this.Bucket.deleteFile(
+                conf.appWriteBucketID,
+                fileID
+            )
+        } catch (error) {
+            throw error
+        }
+    }
+
+    previewFile(fileID){
+        return this.Bucket.getFilePreview(
+            conf.appWriteBucketID,
+            fileID
+        )
+    }
+
+
 }
 
 const service = new DatabaseService()
