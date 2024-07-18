@@ -15,7 +15,7 @@ const Signup = () => {
     const [error, setError] = useState("")
     const { register, handleSubmit } = useForm()
 
-    const Signup = async (data) => {
+    const SignupAccount = async (data) => {
         setError("")
         try {
             const userData = await authService.createAccount(data)
@@ -57,7 +57,7 @@ const Signup = () => {
 
 
 
-                <form onSubmit={handleSubmit(Signup)}>
+                <form onSubmit={handleSubmit(SignupAccount)}>
                     <div className='space-y-5'>
                         <Input
                             label="Name: "
