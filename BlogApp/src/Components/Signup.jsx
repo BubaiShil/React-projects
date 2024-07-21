@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useState} from 'react'
 import { Link, useNavigate } from "react-router-dom"
 import { login } from '../Store/AuthSlice'
 import authService from '../Appwrite/Auth'
@@ -8,7 +8,7 @@ import Input from "./Input"
 import { useDispatch } from "react-redux"
 import { useForm } from "react-hook-form"
 
-const Signup = () => {
+const SignUpComponent = () => {
 
     const navigate = useNavigate()
     const dispatch = useDispatch()
@@ -71,7 +71,7 @@ const Signup = () => {
                             label="Email:"
                             placeholder="enter your email"
                             type="email"
-                            //"email" in regis should be unique name should be same everywhere
+                            // "email" in regis should be unique name should be same everywhere
                             {...register("email", {
                                 required: true,
                                 validate: {
@@ -106,4 +106,4 @@ const Signup = () => {
     )
 }
 
-export default Signup
+export default SignUpComponent

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import service from "../Appwrite/Config";
 import Button from "../Components/Button";
-import Container from "../Container/Container";
+import Container from "../Components/Container/Container";
 import parse from "html-react-parser";
 import { useSelector } from "react-redux";
 
@@ -27,7 +27,7 @@ export default function Post() {
     const deletePost = () => {
         service.deleteDocuments(post.$id).then((status) => {
             if (status) {
-                service.deleteFile(post.featuredImage);
+                service.deleteFile(post.featuredImg);
                 navigate("/");
             }
         });

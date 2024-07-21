@@ -26,7 +26,6 @@ export class DatabaseService {
                 slug,
                 {
                     title,
-                    slug,
                     content,
                     featuredImg,
                     status,
@@ -34,7 +33,7 @@ export class DatabaseService {
                 }
             )
         } catch (error) {
-            throw error
+            console.log("Appwrite serive :: createPost :: error", error);
         }
     }
 
@@ -53,7 +52,7 @@ export class DatabaseService {
                 }
             )
         } catch (error) {
-            throw error
+            console.log("Appwrite serive :: updatePost :: error", error);
         }
     }
 
@@ -67,7 +66,8 @@ export class DatabaseService {
             )
             return true;
         } catch (error) {
-            throw error
+            console.log("Appwrite serive :: deletePost :: error", error);
+            return false
         }
     }
 
@@ -79,7 +79,8 @@ export class DatabaseService {
                 slug
             )
         } catch (error) {
-            throw error
+            console.log("Appwrite serive :: getPost :: error", error);
+            return false
         }
     }
 
@@ -89,11 +90,12 @@ export class DatabaseService {
             return await this.Databases.listDocuments(
                 conf.appWriteDataID,
                 conf.appWriteDataCollection,
-                queries
+                queries,
 
             )
         } catch (error) {
-            throw error
+            console.log("Appwrite serive :: getPosts :: error", error);
+            return false
         }
     }
 
@@ -106,18 +108,21 @@ export class DatabaseService {
                 file
             )
         } catch (error) {
-            throw error
+            console.log("Appwrite serive :: uploadFile :: error", error);
+            return false
         }
     }
 
     async deleteFile(fileID){
         try {
-            return await this.Bucket.deleteFile(
+             await this.Bucket.deleteFile(
                 conf.appWriteBucketID,
                 fileID
             )
+            return true
         } catch (error) {
-            throw error
+            console.log("Appwrite serive :: deleteFile :: error", error);
+            return false
         }
     }
 

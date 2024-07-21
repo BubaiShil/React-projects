@@ -1,12 +1,12 @@
 import React from 'react'
-import { Login as LoginComponent } from "../Components/Login"
+import   LoginComponenets  from "../Components/Login"
 
 const Login = () => {
     return (
         <div className='py-8'>
-            <LoginComponent />
+            <LoginComponenets />
         </div>
     )
 }
 
-export default Login
+export default Login;

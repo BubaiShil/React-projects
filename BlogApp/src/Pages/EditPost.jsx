@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import service from '../Appwrite/Config'
 import PostForm from '../Components/PostForm/PostForm'
-import Container from '../Container/Container'
+import Container from '../Components/Container/Container'
 import { useParams } from 'react-router-dom'
 
 const EditPost = () => {

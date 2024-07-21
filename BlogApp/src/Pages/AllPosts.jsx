@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import service from '../Appwrite/Config'
 import PostCard from '../Components/PostCard'
-import Container from '../Container/Container'
+import Container from '../Components/Container/Container'
 
 const AllPosts = () => {
 

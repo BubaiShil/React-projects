@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import Button from "../Button"
-import Logo from '../Logo'
+import Select from "../Select"
 import Input from "../Input"
 import RTE from '../RTE'
 import service from '../../Appwrite/Config'
@@ -19,13 +19,59 @@ const PostForm = ({ post }) => {
         },
     })
     const navigate = useNavigate()
-    const userData = useSelector(state => state.user.userData)
+    const userData = useSelector((state) => state.auth.userData)
 
     
 
+    // const submit = async (data) => {
+    //     try {
+    //         let fileID = null;
+    
+    //         // Upload file if present
+    //         if (data.image[0]) {
+    //             const file = await service.upLoadFile(data.image[0]);
+    //             if (file) {
+    //                 fileID = file.$id;
+    
+    //                 if (post && post.featuredImg) {
+    //                     await service.deleteFile(post.featuredImg);
+    //                 }
+    //             }
+    //         }
+    
+    //         // Handle existing post (update)
+    //         if (post) {
+    //             const updatedPost = await service.updateDocuments(post.$id, {
+    //                 ...data,
+    //                 featuredImg: fileID || post.featuredImg,
+    //             });
+    
+    //             if (updatedPost) {
+    //                 navigate(`/post/${updatedPost.$id}`);
+    //             }
+    //         } else {
+    //             // Handle new post (create)
+    //             const createdPost = await service.createDocuments({
+    //                 ...data,
+    //                 featuredImg: fileID || "", // Ensure featuredImg is provided
+    //                 userID: userData.$id // Ensure userID is included
+    //             });
+    
+    //             if (createdPost) {
+    //                 navigate(`/post/${createdPost.$id}`);
+    //             }
+    //         }
+    //     } catch (error) {
+    //         console.error('Error submitting post:', error);
+    //     }
+    // };
+    
+    
+
+ 
     const submit = async (data) => {
         if (post) {
-            const file = data.image[0] ? service.upLoadFile(data.image[0]) : null
+            const file = data.image[0] ? await service.upLoadFile(data.image[0]) : null
             if (file) {
                 service.deleteFile(post.featuredImg)
             }
@@ -56,7 +102,6 @@ const PostForm = ({ post }) => {
 
     }
 
-
     const SlugTransform = useCallback((value) =>{
         if (value && typeof value === 'string') 
             return value
@@ -73,14 +118,13 @@ const PostForm = ({ post }) => {
 
     useEffect(()=>{
         const subscription = watch((value,{name})=>{
-            if (name==='title') {
-                setValue('slug',SlugTransform(value.title,{shouldValidate: true}))
+            if (name ==='title') {
+                setValue('slug',SlugTransform(value.title),{shouldValidate: true})
             }
         })
 
-        return () =>{
-            subscription.unsubscribe()
-        }
+        return () => subscription.unsubscribe()
+        
     },[watch,SlugTransform,setValue])
 
 return (

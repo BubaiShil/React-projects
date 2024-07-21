@@ -9,7 +9,7 @@ import { useDispatch } from "react-redux"
 import { useForm } from "react-hook-form"
 
 
-const Login = () => {
+const LoginComponenets = () => {
 
     const navigate = useNavigate()
     const dispatch = useDispatch()
@@ -58,7 +58,6 @@ const Login = () => {
                 {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
 
 
-                //login thing if not works for logging
                 <form onSubmit={handleSubmit(login)} className='mt-8'>
                     <div className='space-y-5'>
 
@@ -81,15 +80,15 @@ const Login = () => {
                             placeholder="enter your password"
                             type="password"
 
-                            {...register("password",{
+                            {...register("password", {
                                 required: true,
                             })}
                         />
 
                         <Button
-                        type='submit'
-                        className='w-full'
-                        > 
+                            type='submit'
+                            className='w-full'
+                        >
                             Sign In
                         </Button>
                     </div>
@@ -99,4 +98,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default LoginComponenets;
