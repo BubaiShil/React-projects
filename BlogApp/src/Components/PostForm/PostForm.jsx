@@ -4,16 +4,17 @@ import Button from "../Button"
 import Select from "../Select"
 import Input from "../Input"
 import RTE from '../RTE'
-import service from '../../Appwrite/Config'
+import service from "../../Appwrite/Config"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
 
 
+// slug: post?.$id || ""
 const PostForm = ({ post }) => {
     const { register, handleSubmit, watch, setValue, control, getValues } = useForm({
         defaultValues: {
             title: post?.title || "",
-            slug: post?.$id || "",
+            slug: post && post.$id ? post.$id : "",
             content: post?.content || "",
             status: post?.status || "active",
         },
@@ -23,84 +24,84 @@ const PostForm = ({ post }) => {
 
     
 
-    // const submit = async (data) => {
-    //     try {
-    //         let fileID = null;
+    const submit = async (data) => {
+        try {
+            let fileID = null;
     
-    //         // Upload file if present
-    //         if (data.image[0]) {
-    //             const file = await service.upLoadFile(data.image[0]);
-    //             if (file) {
-    //                 fileID = file.$id;
+            // Upload file if present
+            if (data.image[0]) {
+                const file = await service.upLoadFile(data.image[0]);
+                if (file) {
+                    fileID = file.$id;
     
-    //                 if (post && post.featuredImg) {
-    //                     await service.deleteFile(post.featuredImg);
-    //                 }
-    //             }
-    //         }
+                    if (post && post.featuredImg) {
+                        await service.deleteFile(post.featuredImg);
+                    }
+                }
+            }
     
-    //         // Handle existing post (update)
-    //         if (post) {
-    //             const updatedPost = await service.updateDocuments(post.$id, {
-    //                 ...data,
-    //                 featuredImg: fileID || post.featuredImg,
-    //             });
+            // Handle existing post (update)
+            if (post) {
+                const updatedPost = await service.updateDocuments(post.$id, {
+                    ...data,
+                    featuredImg: fileID || post.featuredImg,
+                });
     
-    //             if (updatedPost) {
-    //                 navigate(`/post/${updatedPost.$id}`);
-    //             }
-    //         } else {
-    //             // Handle new post (create)
-    //             const createdPost = await service.createDocuments({
-    //                 ...data,
-    //                 featuredImg: fileID || "", // Ensure featuredImg is provided
-    //                 userID: userData.$id // Ensure userID is included
-    //             });
+                if (updatedPost) {
+                    navigate(`/post/${updatedPost.$id}`);
+                }
+            } else {
+                // Handle new post (create)
+                const createdPost = await service.createDocuments({
+                    ...data,
+                    featuredImg: fileID || "", // Ensure featuredImg is provided
+                    userId: userData.$id // Ensure userID is included
+                });
     
-    //             if (createdPost) {
-    //                 navigate(`/post/${createdPost.$id}`);
-    //             }
-    //         }
-    //     } catch (error) {
-    //         console.error('Error submitting post:', error);
-    //     }
-    // };
+                if (createdPost) {
+                    navigate(`/post/${createdPost.$id}`);
+                }
+            }
+        } catch (error) {
+            console.error('Error submitting post:', error);
+        }
+    };
     
     
 
  
-    const submit = async (data) => {
-        if (post) {
-            const file = data.image[0] ? await service.upLoadFile(data.image[0]) : null
-            if (file) {
-                service.deleteFile(post.featuredImg)
-            }
+    // const submit = async (data) => {
+    //     if (post) {
+    //         const file = data.image[0] ? await service.upLoadFile(data.image[0]) : null
+    //         if (file) {
+    //             service.deleteFile(post.featuredImg)
+    //         }
 
-            const dbpost = await service.updateDocuments(post.$id, {
-                ...data,
-                featuredImg: file ? file.$id : undefined,
-            })
+    //         const dbpost = await service.updateDocuments(post.$id, {
+    //             ...data,
+    //             featuredImg: file ? file.$id : undefined,
+    //         })
 
-            if (dbpost) {
-                navigate(`/post/${dbpost.$id}`)
-            }
-        }else{
-            const file = await service.upLoadFile(data.image[0])
+    //         if (dbpost) {
+    //             navigate(`/post/${dbpost.$id}`)
+    //         }
+    //     }else{
+    //         const file = await service.upLoadFile(data.image[0])
 
-            if (file) {
-                const fileID = file.$id
-                data.featuredImg = fileID
-                const dbpost = await service.createDocuments({
-                    ...data,
-                    userId: userData.$id,
-                })
-                if (dbpost) {
-                    navigate(`/post/${dbpost.$id}`)
-                }
-            }
-        }
+    //         if (file) {
+    //             const fileID = file.$id
+    //             data.featuredImg = fileID
+    //             const dbpost = await service.createDocuments({
+    //                 ...data,
+    //                 userId: userData.$id,
+    //             })
+    //             if (dbpost) {
+    //                 navigate(`/post/${dbpost.$id}`)
+    //             }
+    //         }
+    //     }
 
-    }
+    // }
 
     const SlugTransform = useCallback((value) =>{
         if (value && typeof value === 'string') 

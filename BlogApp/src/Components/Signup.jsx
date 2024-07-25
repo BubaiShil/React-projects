@@ -14,6 +14,7 @@ const SignUpComponent = () => {
     const dispatch = useDispatch()
     const [error, setError] = useState("")
     const { register, handleSubmit } = useForm()
+    
 
     const SignupAccount = async (data) => {
         setError("")
