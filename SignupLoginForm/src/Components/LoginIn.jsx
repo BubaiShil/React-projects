@@ -13,6 +13,7 @@ const LoginIn = () => {
     const data = JSON.parse(localStorage.getItem("userData"))
 
     if (data && data.email === email && data.password === password) {
+      setDefaultState("sign Up")
       alert("User Succesfully Logged In");
     }else{
       alert("User Data are Invalid !")
