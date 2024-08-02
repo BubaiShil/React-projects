@@ -75,14 +75,14 @@ button:focus-visible {
   margin: 0;
   box-sizing: border-box;
 }
-body{
+/* body{
   min-height: 100vh;
-}
+} */
 p{
   text-decoration: none;
   color: inherit;
 }
-.app{
+/* .app{
   width: 80%;
   margin: auto;
-}
+} */
