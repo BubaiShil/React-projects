@@ -1,12 +1,13 @@
 import { React, useState } from 'react'
 import { assets } from '../assets/assets'
+import useFood from '../Context/Store'
 
 const FoodItem = ({ id, image, description, price, name }) => {
 
 
-    const [foodCount, setFoodCount] = useState(0)
+    //const [foodCount, setFoodCount] = useState(0)
 
-
+    const {cartItems,addToCart,removeFromCart}= useFood()
 
     return (
         <div className='mb-5 relative'>
@@ -20,16 +21,16 @@ const FoodItem = ({ id, image, description, price, name }) => {
                 <img className='w-40' src={assets.rating_starts} alt="" />
                 <div className='absolute inset-3'>
                     {
-                        !foodCount ?
-                            <img onClick={() => setFoodCount(prev => prev + 1)}
+                        !cartItems[id] ? (
+                            <img onClick={() => addToCart(id)}
                                 className='rounded-sm flex justify-start' src={assets.add_icon_white} alt="" />
-                            :
+                        ):(
                             <div className='flex gap-3'>
-                                <img onClick={()=> setFoodCount(prev => prev + 1)} src={assets.add_icon_green}  alt="" />
-                                <p className='text-white text-xl'>{foodCount}</p>
-                                <img onClick={()=> setFoodCount(prev => prev-1)} src={assets.remove_icon_red} alt="" />
+                                <img onClick={()=> addToCart(id)} src={assets.add_icon_green}  alt="" />
+                                <p className='text-white text-xl'>{cartItems[id]}</p>
+                                <img onClick={()=> removeFromCart(id)} src={assets.remove_icon_red} alt="" />
                             </div>
-
+                        )
                     }
                 </div>
             </div>
