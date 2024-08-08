@@ -1,12 +1,12 @@
 import {React,useState} from 'react'
 import {assets} from '../assets/assets'
 
-const Navbar = () => {
+const Navbar = ({setLoginPop}) => {
 
   const [borderBar, setBorderBar] = useState("home")
 
   return (
-    <div className='flex py-6 px-0 justify-between items-center '>
+    <div className='flex flex-wrap py-6 px-0 justify-between items-center '>
       <img src={assets.logo} alt="" className='ps-32'/>
       <ul className='flex space-x-16 font-semibold text-xl cursor-pointer justify-center text-red-500'>
         <li onClick={()=>setBorderBar("home")} className={borderBar==="home"? `border-b-4 border-red-500 ` : ""} >Home</li>
@@ -20,7 +20,7 @@ const Navbar = () => {
             <img src={assets.basket_icon} alt="" />
             <div className='dot'></div>
         </div>
-        <button className='text-lg font-semibold'>Sign In</button>
+        <button className='text-lg font-semibold' onClick={()=> setLoginPop(true)}>Sign In</button>
       </div>
     </div>
   )

@@ -7,14 +7,18 @@ import Home from './Pages/Home'
 import PlaceOrder from './Pages/PlaceOrder'
 import Cart from './Pages/Cart'
 import Footer from "./Components/Footer"
+import Login from './Components/Login'
 
 
 function App() {
 
+  const [loginPop, setLoginPop] = useState(false)
 
   return (
     <>
-     <Navbar/>
+
+     {loginPop?<Login setLoginPop={setLoginPop}/>:<></>}
+     <Navbar setLoginPop={setLoginPop}/>
      <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/placeorder' element={<PlaceOrder/>}/>

@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const AppDownload = () => {
   return (
-    <div className="w-full p-6 rounded-lg text-center">
+    <div className="w-full my-10 p-6 rounded-lg text-center">
       <p className="mb-4 text-3xl font-semibold">For a better experience, download <br /> Tomato App</p>
       <div className="flex justify-center space-x-4">
         <img src={assets.play_store} alt="Play Store" className="h-12 w-auto" />

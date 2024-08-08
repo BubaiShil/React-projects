@@ -9,7 +9,7 @@ const MenuItems = () => {
         <p className="text-lg mb-2 font-semibold text-orange-500">Welcome to our restaurant! We are delighted to present a selection of our finest menu items for you to enjoy.</p>
         <p className="text-lg text-orange-500 font-semibold">Scroll through our menu to see what we have to offer, and indulge in a delightful culinary experience.</p>
       </div>
-      <div className="flex gap-16 justify-center overflow-x-auto whitespace-nowrap">
+      <div className="flex flex-wrap gap-16 justify-center overflow-x-auto whitespace-nowrap">
         {menu_list.map((item, index) => (
           <div key={index} className="inline-block">
             <img src={item.menu_image} alt={item.menu_name} className="w-full object-cover" />
