@@ -41,10 +41,18 @@ export const ContextProvider = ({ children }) => {
 
 
 
-    useEffect(()=>{
-        console.log([cartItems]);
-        
-    },[cartItems])
+    const totalValue=()=>{
+        let total = 0
+        for (const item in cartItems) {
+            if (cartItems[item]>0) {
+                let itemMatched = food_list.find((product)=> product._id === item)
+                total += itemMatched.price * cartItems[item]
+            }
+            
+        }
+        return total;
+    }
+
 
 
     const contextValue = {
@@ -52,7 +60,8 @@ export const ContextProvider = ({ children }) => {
         cartItems,
         setCartItems,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        totalValue
     };
 
     return (
