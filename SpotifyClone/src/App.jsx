@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div className='bg-black h-screen'>
+    <div className='bg-black h-screen overflow-auto scrollbar-hide'>
       <div className='h-[90%] flex ml-2'>
         <SideBar />
         <DisplayItem/>
