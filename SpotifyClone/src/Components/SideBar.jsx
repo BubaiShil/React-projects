@@ -3,7 +3,7 @@ import { assets } from "../assets/assets"
 
 const SideBar = () => {
     return (
-        <div className=' w-[25%] h-full hidden lg:flex flex-col'>
+        <div className=' w-[25%] h-full hidden lg:flex flex-col mr-3'>
             <div className='bg-[#121212] mt-2 font-semibold gap-5 rounded-xl h-[15%] flex flex-col justify-around p-6'>
                 <div className='flex gap-3 items-center'>
                     <img className='w-6' src={assets.home_icon} alt="" />
