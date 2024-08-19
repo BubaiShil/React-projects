@@ -3,9 +3,12 @@ import './App.css'
 import DisplayItem from './Components/DisplayItem'
 import Player from './Components/Player'
 import SideBar from './Components/SideBar'
+import useStore from './Context/Store'
 
 
 function App() {
+
+  const {audioRef,track} = useStore()
 
 
   return (
@@ -17,6 +20,7 @@ function App() {
       <div className='bg-black h-[10%]'>
         <Player/>
       </div>
+      <audio preload='auto' ref={audioRef} src={track.file}></audio>
     </div>
   )
 }
