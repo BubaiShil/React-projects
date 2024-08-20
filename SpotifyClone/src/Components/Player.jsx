@@ -4,7 +4,7 @@ import useStore from '../Context/Store'
 
 const Player = () => {
 
-    const {SongBar,SongBg,playStatus,Play,Pause,time,track} = useStore()
+    const { SongBar, SongBg, playStatus, Play, Pause, time, track, NextSong, PreviousSong ,seekSong} = useStore()
 
 
     return (
@@ -21,19 +21,21 @@ const Player = () => {
             <div className='flex flex-col items-center m-auto gap-1'>
                 <div className='flex items-center gap-5'>
                     <img className='w-5 cursor-pointer' src={assets.shuffle_icon} alt="" />
-                    <img className='w-5 cursor-pointer' src={assets.prev_icon} alt="" />
+                    <img onClick={PreviousSong} className='w-5 cursor-pointer' src={assets.prev_icon} alt="" />
                     {
-                        !playStatus 
-                        ? <img onClick={Play} className='w-5 cursor-pointer' src={assets.play_icon} alt="" />
-                        : <img onClick={Pause} className='w-5 cursor-pointer' src={assets.pause_icon} alt="" />
+                        !playStatus
+                            ? <img onClick={Play} className='w-5 cursor-pointer' src={assets.play_icon} alt="" />
+                            : <img onClick={Pause} className='w-5 cursor-pointer' src={assets.pause_icon} alt="" />
                     }
-                    <img className='w-5 cursor-pointer' src={assets.next_icon} alt="" />
+                    <img onClick={NextSong} className='w-5 cursor-pointer' src={assets.next_icon} alt="" />
                     <img className='w-5 cursor-pointer' src={assets.loop_icon} alt="" />
                 </div>
 
                 <div className='flex items-center gap-3'>
                     <p>{time.currentTime.minute}:{time.currentTime.second}</p>
-                    <div ref={SongBar} className='border border-b-4 w-[33vw] max-w-[500px] rounded'></div>
+                    <div ref={SongBg} onClick={seekSong} className='w-[33vw] max-w-[500px] bg-green-800 rounded'>
+                        <div ref={SongBar} className='border border-b-4 h-1 bg-gray-300 '></div>
+                    </div>
                     <p>{time.totalTime.minute}:{time.totalTime.second}</p>
                 </div>
             </div>

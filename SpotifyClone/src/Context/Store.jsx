@@ -22,6 +22,36 @@ export const ContextProvider = (props) => {
         }
     })
 
+    const seekSong = async (e)=>{
+        //console.log(e);
+        audioRef.current.currentTime = ((e.nativeEvent.offsetX / SongBg.current.offsetWidth)*audioRef.current.duration)
+        
+    }
+
+    const PreviousSong = async ()=>{
+        if (track.id>0) {
+            await setTrack(songsData[track.id-1]);
+            await audioRef.current.play()
+            setPlayStatus(true)
+        }
+    }
+
+
+    const NextSong = async ()=>{
+        if (track.id<songsData.length-1) {
+            await setTrack(songsData[track.id+1]);
+            await audioRef.current.play()
+            setPlayStatus(true)
+        }
+    }
+
+
+    const SongPlayId = async(id)=>{
+        await setTrack(songsData[id]);
+        await audioRef.current.play()
+        setPlayStatus(true)
+    }
+    
 
     const Play=()=>{
         audioRef.current.play()
@@ -37,6 +67,7 @@ export const ContextProvider = (props) => {
       setTimeout(() => {
 
         audioRef.current.ontimeupdate=()=>{
+            SongBar.current.style.width = (Math.floor(audioRef.current.currentTime / audioRef.current.duration*100))+"%"
             setTime({
                 currentTime : {
                     second: Math.floor(audioRef.current.currentTime % 60),
@@ -60,7 +91,11 @@ export const ContextProvider = (props) => {
         playStatus,setPlayStatus,
         time,setTime,
         Play,
-        Pause
+        Pause,
+        SongPlayId,
+        PreviousSong,
+        NextSong,
+        seekSong
     }
 
 
