@@ -3,7 +3,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='relative w-full'>
+    <div className='relative w-full cursor-default'>
 
       <video autoPlay loop muted src="/clip2.mp4"></video>
       <div className='absolute inset-0 flex items-center justify-center '>
