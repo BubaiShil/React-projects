@@ -10,7 +10,7 @@ import image8 from '../images/8.jpg';
 
 export const items = [
     {
-        id: '001',
+        id: '1',
         image: image1, // Imported image
         company: 'Nikon',
         item_name: 'Nikon COOLPIX A300 Point & Shoot Camera 20.1 MP',
@@ -25,7 +25,7 @@ export const items = [
         },
     },
     {
-        id: '002',
+        id: '2',
         image: image2, // Imported image
         company: 'Blue Heaven',
         item_name: 'Blue Heaven Festive Fair Tone Make Up Kit - Vanilla (10Pcs)',
@@ -40,7 +40,7 @@ export const items = [
         },
     },
     {
-        id: '003',
+        id: '3',
         image: image3, // Imported image
         company: 'HERO',
         item_name: 'Calcuttacycleco Hero Cycles For Mens And Boys 27.5 T Mountain/Hardtail Cycle',
@@ -55,7 +55,7 @@ export const items = [
         },
     },
     {
-        id: '004',
+        id: '4',
         image: image4, // Imported image
         company: 'Apple',
         item_name: 'MacBook M1',
@@ -70,7 +70,7 @@ export const items = [
         },
     },
     {
-        id: '005',
+        id: '5',
         image: image5, // Imported image
         company: 'Roadster',
         item_name: 'Pure Cotton T-shirt',
@@ -85,7 +85,7 @@ export const items = [
         },
     },
     {
-        id: '006',
+        id: '6',
         image: image6, // Imported image
         company: 'Watch',
         item_name: 'Men ReactX Watch',
@@ -100,7 +100,7 @@ export const items = [
         },
     },
     {
-        id: '007',
+        id: '7',
         image: image7, // Imported image
         company: 'The Indian Garage Co',
         item_name: 'Men Slim Fit Regular Shorts',
@@ -113,7 +113,7 @@ export const items = [
         },
     },
     {
-        id: '008',
+        id: '8',
         image: image8, // Imported image
         company: 'Nivea',
         item_name: 'Men Fresh Deodorant 150ml',

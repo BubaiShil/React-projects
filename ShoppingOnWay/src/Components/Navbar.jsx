@@ -13,9 +13,9 @@ const Navbar = () => {
         <h2>ShopyOnWay</h2>
       </div>
       <div className='hidden md:flex gap-5 items-center text-5xl '>
-        <h3 onClick={()=>navigate('/')} cl>Home</h3>
-        <h3 onClick={()=>navigate('/contact')} cl>Contact</h3>
-        <h3 onClick={()=>navigate('/about')} cl>About Us</h3>
+        <h3 onClick={()=>navigate('/')} >Home</h3>
+        <h3 onClick={()=>navigate('/contact')} >Contact</h3>
+        <h3 onClick={()=>navigate('/about')} >About Us</h3>
         <FaCartShopping onClick={()=>navigate('/cart')} className='text-2xl md:text-4xl'/>
         <GiHamburgerMenu className='text-2xl md:text-4xl'/>
       </div>
