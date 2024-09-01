@@ -2,7 +2,11 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import Hero from '../Components/Hero'
 import Offer from '../Components/Offer'
-import CardsItem from '../Components/CardsItem'
+// import CardsItem from '../Components/CardsItem'
+import FeaturedItem from '../Components/FeaturedItem'
+import BestsellerItem from '../Components/BestsellerItem'
+import MidBanner from '../Components/MidBanner'
+
 
 const Home = () => {
   return (
@@ -10,7 +14,9 @@ const Home = () => {
       <Navbar/>
       <Hero/>
       <Offer/>
-      <CardsItem/>
+      <FeaturedItem/>
+      <BestsellerItem/>
+      <MidBanner/>
     </div>
   )
 }

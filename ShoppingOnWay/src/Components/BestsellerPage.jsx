@@ -1,9 +1,9 @@
 import React from 'react'
-import useShop from '../Context/Store';
+import useShop from '../Context/Store'
 
-const CardsPage = ({ name, company, image, id }) => {
+const BestsellerPage = ({ name, company, image, id }) => {
 
-  const { addToCart } = useShop()
+    const {addToCart} = useShop()
 
   return (
     <div className='w-64 h-[30rem] bg-white rounded-lg shadow-2xl p-4 flex flex-col items-center'>
@@ -15,5 +15,4 @@ const CardsPage = ({ name, company, image, id }) => {
   )
 }
 
-
-export default CardsPage
+export default BestsellerPage

@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from 'react'
-import {items} from '../assets/data/items'
+import {items,bestSeller} from '../assets/data/items'
 
 export const StoreContext = createContext(null)
 
@@ -35,7 +35,7 @@ export const ContextProvider = ({ children }) => {
 
 
     const ContextValue = {
-        items,
+        items,bestSeller,
         addToCart,
         cartItems,setCartItems,
         removeFromCart
