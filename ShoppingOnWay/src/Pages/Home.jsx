@@ -7,6 +7,7 @@ import FeaturedItem from '../Components/FeaturedItem'
 import BestsellerItem from '../Components/BestsellerItem'
 import MidBanner from '../Components/MidBanner'
 import HanngerPage from '../Components/HanngerPage'
+import Footer from '../Components/Footer'
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <BestsellerItem/>
       <MidBanner/>
       <HanngerPage/>
+      <Footer/>
     </div>
   )
 }

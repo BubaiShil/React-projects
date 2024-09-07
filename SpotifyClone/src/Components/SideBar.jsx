@@ -45,11 +45,12 @@ const SideBar = () => {
                     <button className='text-[#242424] bg-white rounded-full p-2 px-5 mt-3 font-semibold'>Browse podcasts</button>
                 </div>
 
-
-                <div className='text-white flex gap-1 p-3 border border-solid rounded-full w-28 cursor-pointer hover:border-slate-400 hover:text-slate-400 mx-4 mt-36 font-semibold '>
+                <div className='text-white flex  gap-1 p-3 border border-solid rounded-full w-28 cursor-pointer hover:border-slate-400  md:mt-[6%] hover:text-slate-400 mx-4  font-semibold '>
                 🌐<p>English</p>
                 </div>
+                
             </div>
+
         </div>
     )
 }

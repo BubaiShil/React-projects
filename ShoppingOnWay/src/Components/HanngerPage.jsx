@@ -11,9 +11,10 @@ const HanngerPage = () => {
 
             
             <div className="relative z-10 flex items-center justify-center h-[30rem]">
-                <div className="bg-white bg-opacity-80 p-16 inset-0 rounded-lg shadow-2xl text-center">
-                    <h1 className="text-2xl font-bold text-black mb-2">Up to 50% Off Combos</h1>
-                    <p className="text-lg font-medium text-black">Buy in COMBOS and SAVE</p>
+                <div className="bg-white bg-opacity-70 p-16 inset-0 rounded-lg shadow-2xl text-center">
+                    <h1 className="text-8xl  font-['Porlane'] text-black mb-2">Up to 50% Off Combos</h1>
+                    <p className="text-7xl  font-['Porlane'] text-black">Buy in COMBOS and SAVE</p>
+                    <button className=' text-2xl bg-black text-white rounded-xl p-4 font-bold'>Shop Now</button>
                 </div>
             </div>
         </div>
