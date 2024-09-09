@@ -22,7 +22,7 @@ const Footer = () => {
 
                 
                 <div className="md:col-span-2 space-y-4 ">
-                    <h2 className="text-xl font-bold">Let's go!</h2>
+                    <h2 className="text-xl font-extrabold font-['Chivo-Bold']">Let's go!</h2>
                     <p className='w-[50%]'>Join the ShopyOnWay! Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
                     <form className="space-y-2 w-[70%]">
                         <input
@@ -41,7 +41,7 @@ const Footer = () => {
 
                 
                 <div className="space-y-4 md:col-span-1 -ml-16">
-                    <h2 className="text-xl font-bold">Links</h2>
+                    <h2 className="text-xl font-extrabold font-['Chivo-Bold']">Links</h2>
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-gray-400">About Us</a></li>
                         <li><a href="#" className="hover:text-gray-400">Terms and Conditions</a></li>
@@ -52,7 +52,7 @@ const Footer = () => {
 
                 
                 <div className="space-y-4 md:col-span-1">
-                    <h2 className="text-xl font-bold">Footer Menu</h2>
+                    <h2 className="text-xl font-extrabold font-['Chivo-Bold']">Footer Menu</h2>
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-gray-400">Contact us</a></li>
                         <li><a href="#" className="hover:text-gray-400">About Us</a></li>
