@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import useShop from '../Context/Store'
+import Checkout from '../Components/Checkout';
 
 const Cart = () => {
 
@@ -9,8 +10,8 @@ const Cart = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-gray-100 p-8">
-        <h1 className="text-3xl font-semibold mb-8 text-center">Your Shopping Cart</h1>
+      <div className=" bg-gray-100 p-8">
+        <h1 className="text-3xl font-semibold mt-16 text-center">Your Shopping Cart</h1>
 
         <div className="bg-white rounded-lg shadow-xl p-3 mb-6">
           {items.map((e, index) => {
@@ -33,6 +34,8 @@ const Cart = () => {
           })}
         </div>
       </div>
+
+      <Checkout/>
     </>
   );
 };
