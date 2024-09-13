@@ -9,7 +9,7 @@ const FeaturedItem = () => {
 
 
     return (
-        <div className='px-4 py-6'  data-scroll data-scroll-section data-scroll-speed=".5">
+        <div className='px-4 py-6 bg-white'>
             <h1 className='text-3xl font-bold text-center mb-8'>Our Featured Products</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 justify-items-center items-center'>
                 {items.map(item => (

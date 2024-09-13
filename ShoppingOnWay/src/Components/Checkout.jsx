@@ -4,7 +4,7 @@ const Checkout = () => {
     
   
     return (
-      <div className="bg-gray-100 p-8 flex flex-col justify-center w-[60%] mx-60">
+      <div className="bg-gray-100 p-8 flex flex-col justify-center mt-6 w-[60%] mx-72">
         <h2 className="text-2xl font-bold mb-6">Checkout Summary</h2>
   
         <div className="flex justify-between items-center mb-4">

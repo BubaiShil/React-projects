@@ -8,6 +8,7 @@ import BestsellerItem from '../Components/BestsellerItem'
 import MidBanner from '../Components/MidBanner'
 import HanngerPage from '../Components/HanngerPage'
 import Footer from '../Components/Footer'
+import TestScrooll from '../Components/TestScrooll'
 
 
 const Home = () => {
@@ -15,8 +16,8 @@ const Home = () => {
     <div>
       <Navbar/>
       <Hero/>
-      <Offer/>
-      <FeaturedItem/>
+      
+      <TestScrooll/>
       <BestsellerItem/>
       <MidBanner/>
       <HanngerPage/>

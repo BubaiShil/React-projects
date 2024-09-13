@@ -11,7 +11,7 @@ const Cart = () => {
     <>
       <Navbar />
       <div className=" bg-gray-100 p-8">
-        <h1 className="text-3xl font-semibold mt-16 text-center">Your Shopping Cart</h1>
+        <h1 className="text-3xl font-semibold mt-16 mb-5 text-center">Your Shopping Cart</h1>
 
         <div className="bg-white rounded-lg shadow-xl p-3 mb-6">
           {items.map((e, index) => {

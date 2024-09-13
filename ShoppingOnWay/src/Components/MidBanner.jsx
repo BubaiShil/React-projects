@@ -10,19 +10,19 @@ const MidBanner = () => {
     <div className='mt-3 h-[43rem] flex gap-2 mx-2 '>
 
       <div className='w-[50%]'>
-        <img className='h-full w-full object-fill rounded-lg scale-100 hover:scale-95 transition-transform duration-300' src={banner2} alt="" />
+        <img className='h-full w-full object-fill rounded-lg ' src={banner2} alt="" />
       </div>
 
 
       <div className='flex flex-col w-[50%] gap-2'>
 
         <div className='h-[50%] w-full'>
-          <img src={banner} className='h-full w-full object-cover rounded-lg scale-100 hover:scale-95 transition-transform duration-300' alt="" />
+          <img src={banner} className='h-full w-full object-cover rounded-lg ' alt="" />
         </div>
 
         <div className='flex w-full h-[50%] gap-2 '>
-          <img className='object-cover w-[50%] h-full rounded-lg scale-100 hover:scale-125 transition-transform duration-300' src={banner3} alt="" />
-          <img className='object-cover w-[50%] h-full rounded-lg scale-100 hover:scale-125 transition-transform duration-300' src={banner4} alt="" />
+          <img className='object-cover w-[50%] h-full rounded-lg ' src={banner3} alt="" />
+          <img className='object-cover w-[50%] h-full rounded-lg ' src={banner4} alt="" />
         </div>
       </div>
     </div>
