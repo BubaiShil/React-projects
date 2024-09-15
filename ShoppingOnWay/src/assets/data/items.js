@@ -18,8 +18,8 @@ export const items = [
     {
         id: '1',
         image: image1, // Imported image
-        company: 'Nikon',
-        item_name: 'Nikon COOLPIX A300 Point & Shoot Camera 20.1 MP',
+        company: 'Denim Co.',
+        item_name: 'Classic Blue Jeans',
         original_price: 1045,
         current_price: 606,
         discount: 42,
@@ -33,8 +33,8 @@ export const items = [
     {
         id: '2',
         image: image2, // Imported image
-        company: 'Blue Heaven',
-        item_name: 'Blue Heaven Festive Fair Tone Make Up Kit - Vanilla (10Pcs)',
+        company: 'Urban Outfitters',
+        item_name: 'Violet Comfort Hoodie',
         original_price: 2599,
         current_price: 1507,
         discount: 42,
@@ -48,8 +48,8 @@ export const items = [
     {
         id: '3',
         image: image3, // Imported image
-        company: 'HERO',
-        item_name: 'Calcuttacycleco Hero Cycles For Mens And Boys 27.5 T Mountain/Hardtail Cycle',
+        company: 'Casual Vibes',
+        item_name: 'Peach Loose Fit Pants',
         original_price: 1599,
         current_price: 495,
         discount: 69,
@@ -63,10 +63,10 @@ export const items = [
     {
         id: '4',
         image: image4, // Imported image
-        company: 'Apple',
-        item_name: 'MacBook M1',
-        original_price: 99999,
-        current_price: 89999,
+        company: 'Fashion Hub',
+        item_name: 'Shirt Collection',
+        original_price: 999,
+        current_price: 499,
         discount: 0,
         return_period: 14,
         delivery_date: '10 Oct 2023',
@@ -78,8 +78,8 @@ export const items = [
     {
         id: '5',
         image: image5, // Imported image
-        company: 'Roadster',
-        item_name: 'Pure Cotton T-shirt',
+        company: 'Street Style',
+        item_name: 'Deep Violet Oversized ',
         original_price: 1399,
         current_price: 489,
         discount: 65,
@@ -140,8 +140,8 @@ export const bestSeller = [
     {
         id: '1',
         image: image10, // Imported image
-        company: 'Nikon',
-        item_name: 'Nikon COOLPIX A300 Point & Shoot Camera 20.1 MP',
+        company: 'EcoWear',
+        item_name: 'Forest Green T-Shirt',
         original_price: 1045,
         current_price: 606,
         discount: 42,
@@ -155,8 +155,8 @@ export const bestSeller = [
     {
         id: '2',
         image: image11, // Imported image
-        company: 'Blue Heaven',
-        item_name: 'Blue Heaven Festive Fair Tone Make Up Kit - Vanilla (10Pcs)',
+        company: 'Sunny Styles',
+        item_name: 'Light Orange T-Shirt',
         original_price: 2599,
         current_price: 1507,
         discount: 42,
@@ -170,8 +170,8 @@ export const bestSeller = [
     {
         id: '3',
         image: image12, // Imported image
-        company: 'HERO',
-        item_name: 'Calcuttacycleco Hero Cycles For Mens And Boys 27.5 T Mountain/Hardtail Cycle',
+        company: 'Pattern Play',
+        item_name: 'Green T-Shirt with Pattern',
         original_price: 1599,
         current_price: 495,
         discount: 69,
@@ -185,8 +185,8 @@ export const bestSeller = [
     {
         id: '4',
         image: image13, // Imported image
-        company: 'Apple',
-        item_name: 'MacBook M1',
+        company: 'Classic Threads',
+        item_name: 'Jet Black T-Shirt',
         original_price: 99999,
         current_price: 89999,
         discount: 0,
@@ -200,8 +200,8 @@ export const bestSeller = [
     {
         id: '5',
         image: image14, // Imported image
-        company: 'Roadster',
-        item_name: 'Pure Cotton T-shirt',
+        company: 'Bright Basics',
+        item_name: 'Crisp White T-Shirt',
         original_price: 1399,
         current_price: 489,
         discount: 65,

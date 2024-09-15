@@ -6,6 +6,7 @@ import Home from './Pages/Home'
 import {Routes,Route} from 'react-router-dom'
 import Cart from './Pages/Cart'
 import LocomotiveScroll from 'locomotive-scroll';
+import BuyNow from './Pages/BuyNow'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/buynow' element={<BuyNow/>}/>
       </Routes>
       
     </>

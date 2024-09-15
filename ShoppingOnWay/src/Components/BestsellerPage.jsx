@@ -1,7 +1,7 @@
 import React from 'react'
 import useShop from '../Context/Store'
 
-const BestsellerPage = ({ name, company, image, id }) => {
+const BestsellerPage = ({ name, company, image, id ,price}) => {
 
     const {addToCart} = useShop()
 
@@ -10,7 +10,8 @@ const BestsellerPage = ({ name, company, image, id }) => {
       <img className='w-full h-56 object-cover mb-4' src={image} alt={name} />
       <h2 className='text-lg font-semibold mb-1'>{name}</h2>
       <h3 className='text-sm text-gray-500'>{company}</h3>
-      <div className='mt-3 p-4 bg-slate-400 rounded-xl' onClick={() => addToCart(id)}>Add to Cart</div>
+      <h2 className='text-lg font-bold mt-2'>₹{price}</h2>
+      <div className='p-4 font-extrabold text-md rounded-xl text-white mt-9 cursor-pointer bg-black' onClick={() => addToCart(id)}>Add to Cart</div>
     </div>
   )
 }
