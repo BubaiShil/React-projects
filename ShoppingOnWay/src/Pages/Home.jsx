@@ -9,6 +9,7 @@ import MidBanner from '../Components/MidBanner'
 import HanngerPage from '../Components/HanngerPage'
 import Footer from '../Components/Footer'
 import TestScrooll from '../Components/TestScrooll'
+import ConnectPart from '../Components/ConnectPart'
 
 
 const Home = () => {
@@ -16,11 +17,12 @@ const Home = () => {
     <div>
       <Navbar/>
       <Hero/>
-      
       <TestScrooll/>
-      <BestsellerItem/>
+      
       <MidBanner/>
+      <BestsellerItem/>
       <HanngerPage/>
+      <ConnectPart/>
       <Footer/>
     </div>
   )
