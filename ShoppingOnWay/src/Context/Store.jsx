@@ -8,13 +8,13 @@ export const ContextProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState({})
 
 
-    const addToCart = (cartId) => {
-        setCartItems((prev) => {
-            const updatedCart = { ...prev }
-            if (updatedCart[cartId]) {
-                updatedCart[cartId] += 1
-            } else {
-                updatedCart[cartId] = 1
+    const addToCart = (cartId,newQty) => {
+        setCartItems((prev)=>{
+            const updatedCart = {...prev}
+            if (newQty>0) {
+                updatedCart[cartId] = newQty;
+            }else{
+                delete updatedCart[cartId]
             }
             return updatedCart;
         })

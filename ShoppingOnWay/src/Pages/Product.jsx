@@ -2,6 +2,7 @@ import React from 'react';
 import useShop from '../Context/Store';
 import { useParams } from 'react-router-dom';
 import ProductDisplay from '../Components/ProductDisplay';
+import Navbar from '../Components/Navbar'
 
 const Product = () => {
   const { items } = useShop();
@@ -13,8 +14,10 @@ const Product = () => {
   }
 
   return (
-    <div>
-      <ProductDisplay product={product} />
+    <div className='flex flex-col'>
+      <Navbar/>
+      
+      <ProductDisplay product={product}/>
     </div>
   );
 };
