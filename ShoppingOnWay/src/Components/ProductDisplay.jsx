@@ -22,6 +22,7 @@ const ProductDisplay = ({product}) => {
 
   const HandleAddToCart=()=>{
     addToCart(product.id, quantity);  // Update cart in context
+    alert("Item Added To Cart 👍")
   }
   
 
