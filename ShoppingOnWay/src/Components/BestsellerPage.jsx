@@ -1,5 +1,6 @@
 import React from 'react'
 import useShop from '../Context/Store'
+import { BsCart4 } from "react-icons/bs";
 
 const BestsellerPage = ({ name, company, image, id ,price}) => {
 
@@ -11,7 +12,10 @@ const BestsellerPage = ({ name, company, image, id ,price}) => {
       <h2 className='text-lg font-semibold mb-1'>{name}</h2>
       <h3 className='text-sm text-gray-500'>{company}</h3>
       <h2 className='text-lg font-bold mt-2'>₹{price}</h2>
-      <div className='p-4 font-extrabold text-md rounded-xl text-white mt-9 cursor-pointer bg-black' onClick={() => addToCart(id)}>Add to Cart</div>
+      <div className='flex items-center gap-2 p-4 font-extrabold text-md rounded-xl text-white mt-9 cursor-pointer bg-black' onClick={() => addToCart(id)}>
+        <BsCart4 className='text-white text-xl'/>
+        <h1>Add to Cart</h1>
+      </div>
     </div>
   )
 }

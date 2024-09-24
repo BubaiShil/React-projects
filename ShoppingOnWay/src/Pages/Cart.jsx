@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Components/Navbar';
 import useShop from '../Context/Store';
 import Checkout from '../Components/Checkout';
+import { MdRemoveShoppingCart } from "react-icons/md";
 
 const Cart = () => {
   const { items, cartItems, removeFromCart } = useShop();
@@ -38,7 +39,7 @@ const Cart = () => {
                     onClick={() => removeFromCart(e.id)}
                     className="col-span-1 text-red-500 font-bold text-2xl hover:text-red-700 transition-colors"
                   >
-                    x
+                    <MdRemoveShoppingCart/>
                   </button>
                 </div>
               );

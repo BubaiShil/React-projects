@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import useShop from '../Context/Store';
+import { BsCart4 } from "react-icons/bs";
 
 const ProductDisplay = ({product}) => {
 
@@ -101,10 +102,11 @@ const ProductDisplay = ({product}) => {
             
             <div className="flex space-x-4 mt-6 rounded-xl">
               <button
-                className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-700"
+                className="flex gap-2 px-4 py-4 bg-black text-white rounded-lg hover:bg-gray-700"
                 onClick={HandleAddToCart}
               >
-                Add to Cart
+                <BsCart4 className='text-xl'/>
+                <h1>Add to Cart</h1>
               </button>
             </div>
           </div>
