@@ -13,7 +13,7 @@ const ConnectPart = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center bg-gradient-to-r from-gray-100 via-white to-gray-100 p-10 py-24 rounded-lg shadow-xl mt-12 text-center">
+    <div className="flex flex-col justify-center mt-32 items-center bg-gradient-to-r from-gray-100 via-white to-gray-100 p-10 py-16 md:py-24 rounded-lg shadow-xl lg:mt-12 text-center">
       <h2 className="text-3xl font-extrabold text-gray-800 mb-3">
         Join the Swag Gangsters
       </h2>
@@ -27,13 +27,13 @@ const ConnectPart = () => {
             placeholder="Enter your email"
             value={email}
             onChange={handleEmailChange}
-            className="w-full p-4 pr-10 border border-gray-300 rounded-md focus:ring-2 focus:ring-black transition-all duration-300"
+            className="lg:w-full p-4 pr-10 border border-gray-300 rounded-md focus:ring-2 focus:ring-black transition-all duration-300"
             required
           />
         </div>
         <button
           type="submit"
-          className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-900 transition-all duration-300"
+          className="lg:w-full bg-black px-6 text-white py-3 rounded-lg hover:bg-gray-900 transition-all duration-300"
         >
           Join Now
         </button>
@@ -43,7 +43,7 @@ const ConnectPart = () => {
         By joining, you agree to receive updates and exclusive offers.
       </div>
 
-      <div className="flex items-center justify-center space-x-3 mt-10">
+      <div className="hidden lg:flex items-center justify-center space-x-3 mt-10">
         <div className="flex flex-col items-center">
           <h3 className="text-xl font-extrabold text-gray-700">Free Goodies</h3>
           <p className="text-lg text-gray-500">Get exclusive swag when you join.</p>

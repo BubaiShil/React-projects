@@ -6,9 +6,9 @@ import banner from '../assets/images/banner.webp';
 
 const MidBanner = () => {
   return (
-    <div className='mt-3 h-[43rem] flex gap-2 mx-2'>
+    <div className='md:mt-3 h-[43rem] flex gap-2 mx-2'>
 
-      <div className='w-[50%] group relative'>
+      <div className='hidden md:block md:w-[50%] group md:relative'>
         <img 
           className='h-full w-full object-cover rounded-lg' 
           src={banner2} 
@@ -20,8 +20,8 @@ const MidBanner = () => {
         </div>
       </div>
 
-      <div className='flex flex-col w-[50%] gap-2'>
-        <div className='h-[50%] w-full group relative'>
+      <div className='md:flex flex-col md:w-[50%] gap-2'>
+        <div className='md:h-[50%] w-full mb-4 md:mb-0 group relative'>
           <img 
             src={banner} 
             className='h-full w-full object-cover rounded-lg' 
@@ -42,7 +42,7 @@ const MidBanner = () => {
               loading="lazy" 
             />
             <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-              <span className='text-white text-5xl font-["Porlane"] '>Latest Oversized Collection</span>
+              <span className='text-white text-4xl md:text-5xl font-["Porlane"] '>Latest Oversized Collection</span>
             </div>
           </div>
 
@@ -54,7 +54,7 @@ const MidBanner = () => {
               loading="lazy"  
             />
             <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-              <span className='text-white text-5xl font-["Porlane"] '>Trendy Oversized Styles</span>
+              <span className='text-white text-4xl md:text-5xl font-["Porlane"] '>Trendy Oversized Styles</span>
             </div>
           </div>
         </div>

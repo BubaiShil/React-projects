@@ -6,7 +6,7 @@ import { MdRemoveShoppingCart } from "react-icons/md";
 
 const Cart = () => {
   const { items, bestSeller, cartItems, removeFromCart } = useShop();
-  const allProducts = [...items, ...bestSeller];
+  const allProducts = [...items, ...bestSeller];// key area to remember
   
   const calculateTotalPrice = () => {
     return Object.keys(cartItems).reduce((total, id) => {
