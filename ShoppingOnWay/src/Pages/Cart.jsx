@@ -5,13 +5,13 @@ import Checkout from '../Components/Checkout';
 import { MdRemoveShoppingCart } from "react-icons/md";
 
 const Cart = () => {
-  const { items, cartItems, removeFromCart } = useShop();
-
+  const { items, bestSeller, cartItems, removeFromCart } = useShop();
+  const allProducts = [...items, ...bestSeller];
   
   const calculateTotalPrice = () => {
     return Object.keys(cartItems).reduce((total, id) => {
       const quantity = cartItems[id];
-      const item = items.find((item) => item.id === id);
+      const item = allProducts.find((item) => item.id === id);
       return total += item.current_price * quantity;
     }, 0);
   };
@@ -26,7 +26,7 @@ const Cart = () => {
 
         <div className="bg-white rounded-lg shadow-xl p-3 mb-6">
           
-          {items.map((e, index) => {
+          {allProducts.map((e, index) => {
             const quantity = cartItems[e.id];
             if (quantity > 0) {
               // Calculate the total price for this individual item (item price * quantity)

@@ -100,7 +100,7 @@ export const items = [
 
 export const bestSeller = [
     {
-        id: '1',
+        id: '6',
         image: image10, // Imported image
         company: 'EcoWear',
         item_name: 'Forest Green T-Shirt',
@@ -115,7 +115,7 @@ export const bestSeller = [
         },
     },
     {
-        id: '2',
+        id: '7',
         image: image11, // Imported image
         company: 'Sunny Styles',
         item_name: 'Light Orange T-Shirt',
@@ -130,7 +130,7 @@ export const bestSeller = [
         },
     },
     {
-        id: '3',
+        id: '8',
         image: image12, // Imported image
         company: 'Pattern Play',
         item_name: 'Green T-Shirt with Pattern',
@@ -145,12 +145,12 @@ export const bestSeller = [
         },
     },
     {
-        id: '4',
+        id: '9',
         image: image13, // Imported image
         company: 'Classic Threads',
         item_name: 'Jet Black T-Shirt',
-        original_price: 99999,
-        current_price: 89999,
+        original_price: 999,
+        current_price: 999,
         discount: 0,
         return_period: 14,
         delivery_date: '10 Oct 2023',
@@ -160,7 +160,7 @@ export const bestSeller = [
         },
     },
     {
-        id: '5',
+        id: '10',
         image: image14, // Imported image
         company: 'Bright Basics',
         item_name: 'Crisp White T-Shirt',

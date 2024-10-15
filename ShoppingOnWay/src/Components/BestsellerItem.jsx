@@ -14,7 +14,7 @@ const BestsellerItem = () => {
                     <BestsellerPage
                         key={item.id}
                         name={item.item_name}
-                        price={item.original_price}
+                        price={item.current_price}
                         company={item.company}
                         image={item.image}
                         id={item.id}
