@@ -29,12 +29,12 @@ const ProductDisplay = ({product}) => {
 
   return (
     <>
-      <div className="max-w-4xl mx-auto bg-white p-8 shadow-2xl rounded-lg mt-32">
+      <div className="max-w-4xl mx-auto bg-white p-8 shadow-2xl rounded-lg mt-16 md:mt-32">
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
           
           <div className="md:w-1/3 flex justify-center ">
             <img
-              className="w-full rounded-2xl object-cover"
+              className="w-full h-96  rounded-2xl object-cover"
               src={product.image}
               alt={product.item_name}
             />
