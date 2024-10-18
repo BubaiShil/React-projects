@@ -16,7 +16,7 @@ export const ContextProvider = ({ children }) => {
             }else{
                 delete updatedCart[cartId]
             }
-            console.log("Updated Cart: ", updatedCart);
+            //console.log("Updated Cart: ", updatedCart);
             
             return updatedCart;
         })

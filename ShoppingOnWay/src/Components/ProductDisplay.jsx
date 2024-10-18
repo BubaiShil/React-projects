@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import useShop from '../Context/Store';
 import { BsCart4 } from "react-icons/bs";
+import { toast } from 'react-toastify';
 
 const ProductDisplay = ({product}) => {
 
@@ -22,7 +23,7 @@ const ProductDisplay = ({product}) => {
 
   const HandleAddToCart=()=>{
     addToCart(product.id, quantity);  // Update cart in context
-    alert("Item Added To Cart 👍")
+    toast.success(`${quantity} ${product.item_name} Added To Cart 👍`)
   }
   
 

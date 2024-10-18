@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 import Navbar from '../Components/Navbar';
 import useShop from '../Context/Store';
 import Checkout from '../Components/Checkout';
@@ -17,6 +18,15 @@ const Cart = () => {
   };
 
   const total = calculateTotalPrice(); 
+
+
+  const removeFronCartPopup=(e)=>{
+    removeFromCart(e.id)
+    toast.info(`1:Qty ${e.item_name} removed from cart.`)
+    //console.log(e);
+    //console.log(name);
+    //console.log(quantity);
+  }
 
   return (
     <>
@@ -45,7 +55,7 @@ const Cart = () => {
                   
                   <p className="col-span-1 font-bold text-lg">₹{totalPriceForItem}</p>
                   <button
-                    onClick={() => removeFromCart(e.id)}
+                    onClick={()=>removeFronCartPopup(e)}
                     className="col-span-1 text-red-500 font-bold text-2xl hover:text-red-700 transition-colors ml-3 md:ml-0"
                   >
                     <MdRemoveShoppingCart />

@@ -8,6 +8,9 @@ import Cart from './Pages/Cart'
 import LocomotiveScroll from 'locomotive-scroll';
 //import BuyNow from './Pages/BuyNow'
 import Product from './Pages/Product'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -24,7 +27,7 @@ function App() {
            <Route path=':productId' element={<Product/>}/>
         </Route>
       </Routes>
-      
+      <ToastContainer autoClose={3000} />
     </>
   )
 }
