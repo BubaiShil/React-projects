@@ -27,7 +27,7 @@ function App() {
            <Route path=':productId' element={<Product/>}/>
         </Route>
       </Routes>
-      <ToastContainer autoClose={3000} />
+      <ToastContainer autoClose={2500} />
     </>
   )
 }
