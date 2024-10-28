@@ -47,6 +47,21 @@ export const categoryData = [
   { name: "Sports & Outdoor Gear", value: 2500 },
 ];
 
+export const MONTHLY_ACTIVE_USERS = [
+  { month: "January", users: 2000 },
+  { month: "February", users: 2500 },
+  { month: "March", users: 2200 },
+  { month: "April", users: 2700 },
+  { month: "May", users: 3000 },
+  { month: "June", users: 2800 },
+  { month: "July", users: 3100 },
+  { month: "August", users: 2900 },
+  { month: "September", users: 3300 },
+  { month: "October", users: 3500 },
+  { month: "November", users: 3400 },
+  { month: "December", users: 3700 },
+];
+
 export const SALES_CHANNEL_DATA = [
   { name: "E-commerce Website", value: 56000 },
   { name: "Mobile Shopping App", value: 45000 },
