@@ -69,6 +69,8 @@ export const SALES_CHANNEL_DATA = [
   { name: "Social Media Platforms", value: 24000 },
 ];
 
+
+
 export const SIDEBAR_ITEMS = [
   { name: "Overview", icon: <BarChart2 color="#03C9D7" />, href: "/" },
   {
