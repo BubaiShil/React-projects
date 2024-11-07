@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { categoryData } from '../../Data/DashboardDta';
 import { PieChart, Pie,Cell, Sector, ResponsiveContainer } from 'recharts';
 
-const COLORS = ['#004B53', '#13727A', '#66A8AB ', '#99D7D8', '#CCFFFF'];
+const COLORS = ['#CCFFFF', '#99D7D8', '#66A8AB', '#13727A', '#004B53']
 
 const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180;
@@ -23,7 +23,7 @@ const renderActiveShape = (props) => {
 
   return (
     <g>
-      <text x={cx} y={cy} dy={8} textAnchor="middle" fill='#99D7D8'>{payload.name}</text>
+      <text x={cx} y={cy} dy={8} textAnchor="middle" fontSize='0.6rem' fill='#99D7D8'>{payload.name}</text>
       <Sector
         cx={cx}
         cy={cy}
@@ -61,7 +61,7 @@ const PiechartProd = () => {
 
   return (
     <div>
-      <ResponsiveContainer width="100%" height={400}>
+      <ResponsiveContainer width="100%" height={300}>
         <PieChart>
           <Pie
             activeIndex={activeIndex}

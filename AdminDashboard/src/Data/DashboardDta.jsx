@@ -7,7 +7,7 @@ import {
   ShoppingCart,
   TrendingUp,
   Settings,
-} from "lucide-react"; 
+} from "lucide-react";
 
 export const salesData = [
   { name: "Jan", sales: 7000 },
@@ -26,23 +26,71 @@ export const salesData = [
 
 export const userGrowthData = [
   { month: "Jan", users: 800 },
-	{ month: "Feb", users: 1200 },
-	{ month: "Mar", users: 2500 },
-	{ month: "Apr", users: 1800 },
-	{ month: "May", users: 4000 },
-	{ month: "Jun", users: 2200 },
-	{ month: "Jul", users: 3300 },
-	{ month: "Aug", users: 2900 },
-	{ month: "Sep", users: 5000 },
-	{ month: "Oct", users: 3100 },
-	{ month: "Nov", users: 2700 },
-	{ month: "Dec", users: 4300 },
+  { month: "Feb", users: 1200 },
+  { month: "Mar", users: 2500 },
+  { month: "Apr", users: 1800 },
+  { month: "May", users: 4000 },
+  { month: "Jun", users: 2200 },
+  { month: "Jul", users: 3300 },
+  { month: "Aug", users: 2900 },
+  { month: "Sep", users: 5000 },
+  { month: "Oct", users: 3100 },
+  { month: "Nov", users: 2700 },
+  { month: "Dec", users: 4300 },
+];
+
+export const productData = [
+  {
+    id: 1,
+    name: "Wireless Earbuds",
+    category: "Electronics",
+    price: 59.99,
+    stock: 143,
+    sales: 1200,
+    img: "https://cdn.pixabay.com/photo/2020/09/24/14/51/earphones-5598952_640.jpg",
+  },
+  {
+    id: 2,
+    name: "Leather Wallet",
+    category: "Accessories",
+    price: 39.99,
+    stock: 89,
+    sales: 800,
+    img: "https://cdn.pixabay.com/photo/2022/02/11/09/21/leather-wallet-7006894_640.jpg",
+  },
+  {
+    id: 3,
+    name: "Smart Watch",
+    category: "Electronics",
+    price: 199.99,
+    stock: 56,
+    sales: 650,
+    img: "https://images.unsplash.com/photo-1617625802912-cde586faf331?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNtYXJ0JTIwd2F0Y2hlc3xlbnwwfHwwfHx8MA%3D%3D",
+  },
+  {
+    id: 4,
+    name: "Coffee Maker",
+    category: "Home",
+    price: 79.99,
+    stock: 78,
+    sales: 720,
+    img: "https://cdn.pixabay.com/photo/2016/11/19/17/17/beverage-1840426_640.jpg",
+  },
+  {
+    id: 5,
+    name: "Yoga Mat",
+    category: "Fitness",
+    price: 29.99,
+    stock: 210,
+    sales: 950,
+    img: "https://cdn.pixabay.com/photo/2021/10/03/04/23/yoga-mats-6676903_640.jpg",
+  },
 ];
 
 export const categoryData = [
   { name: "Electronics & Gadgets", value: 5500 },
   { name: "Apparel & Fashion", value: 4300 },
-  { name: "Home Improvement & Decor", value: 3900 },
+  { name: "Home Improve & Decor", value: 3900 },
   { name: "Books & Media", value: 2800 },
   { name: "Sports & Outdoor Gear", value: 2500 },
 ];
@@ -68,8 +116,6 @@ export const SALES_CHANNEL_DATA = [
   { name: "Online Marketplaces", value: 38000 },
   { name: "Social Media Platforms", value: 24000 },
 ];
-
-
 
 export const SIDEBAR_ITEMS = [
   { name: "Overview", icon: <BarChart2 color="#03C9D7" />, href: "/" },
