@@ -6,6 +6,8 @@ import Product from './Pages/Product'
 import Orders from './Pages/Orders'
 import Sales from './Pages/Sales'
 import Navbar from './Components/CommonItems/Navbar'
+import User from './Pages/User'
+import Setting from './Pages/Setting'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 //import './App.css'
@@ -28,8 +30,10 @@ function App() {
         <Routes >
           <Route path='/' element={<OverViewHome/>}/>
           <Route path='/products' element={<Product/>}/>
+          <Route path='/users' element={<User/>}/>
           <Route path='/orders' element={<Orders/>}/>
           <Route path='/sales' element={<Sales/>}/>
+          <Route path='/settings' element={<Setting/>}/>
         </Routes>
         {/* </div> */}
         

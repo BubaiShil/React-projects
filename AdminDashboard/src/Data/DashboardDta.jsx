@@ -24,6 +24,16 @@ export const salesData = [
   { name: "Dec", sales: 8100 },
 ];
 
+
+export const userData = [
+	{ id: 1, name: "Amit Sharma", email: "amit@example.com", role: "Customer", status: "Active", img: "https://via.placeholder.com/150" },
+	{ id: 2, name: "Priya Singh", email: "priya@example.com", role: "Admin", status: "Active", img: "https://via.placeholder.com/150" },
+	{ id: 3, name: "Ravi Kumar", email: "ravi@example.com", role: "Customer", status: "Inactive", img: "https://via.placeholder.com/150" },
+	{ id: 4, name: "Anjali Patel", email: "anjali@example.com", role: "Customer", status: "Active", img: "https://via.placeholder.com/150" },
+	{ id: 5, name: "Vikram Rao", email: "vikram@example.com", role: "Moderator", status: "Active", img: "https://via.placeholder.com/150" },
+];
+
+
 export const userGrowthData = [
   { month: "Jan", users: 800 },
   { month: "Feb", users: 1200 },
@@ -124,14 +134,9 @@ export const SIDEBAR_ITEMS = [
     icon: <ShoppingBag color="#03C9D7" />,
     href: "/products",
   },
-  { name: "Users", icon: <Users color="#03C9D7" />, href: "/users" },
   { name: "Sales", icon: <DollarSign color="#03C9D7" />, href: "/sales" },
+  { name: "Users", icon: <Users color="#03C9D7" />, href: "/users" },
   { name: "Orders", icon: <ShoppingCart color="#03C9D7" />, href: "/orders" },
-  {
-    name: "Analytics",
-    icon: <TrendingUp color="#03C9D7" />,
-    href: "/analytics",
-  },
   { name: "Settings", icon: <Settings color="#03C9D7" />, href: "/settings" },
 ];
 

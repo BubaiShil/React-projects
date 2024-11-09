@@ -17,6 +17,7 @@ const Product = () => {
           classNam="bg-[#33373E]"
           fontsizz="text-[2rem]"
           amount='56'
+          subpart="+38%"
         />
         <StatsCard
           name="Total Products"
@@ -45,6 +46,7 @@ const Product = () => {
           classNam="bg-[#33373E]"
           fontsizz="text-[2rem]"
           amount="$5,32,424"
+          subpart="+58%"
         />
       </div>
 
