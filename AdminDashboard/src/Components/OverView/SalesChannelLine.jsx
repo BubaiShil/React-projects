@@ -16,7 +16,7 @@ import {
 const SalesChannelLine = () => {
   return (
     <div className="mt-8 ">
-        <ResponsiveContainer  className="bg-[#32363E] rounded-3xl p-5" width="200%" height={300}>
+        <ResponsiveContainer  className="bg-[#32363E] px-0 rounded-3xl p-5" width="200%" height={300}>
         <LineChart data={MONTHLY_ACTIVE_USERS}>
           <XAxis dataKey="month" tick={{ fill: "#FFFFFF", fontSize: 14 }} />
           <CartesianGrid strokeDasharray="3 3" stroke="#4B5563" />

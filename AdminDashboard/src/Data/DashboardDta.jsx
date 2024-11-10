@@ -26,11 +26,20 @@ export const salesData = [
 
 
 export const userData = [
-	{ id: 1, name: "Amit Sharma", email: "amit@example.com", role: "Customer", status: "Active", img: "https://via.placeholder.com/150" },
-	{ id: 2, name: "Priya Singh", email: "priya@example.com", role: "Admin", status: "Active", img: "https://via.placeholder.com/150" },
-	{ id: 3, name: "Ravi Kumar", email: "ravi@example.com", role: "Customer", status: "Inactive", img: "https://via.placeholder.com/150" },
-	{ id: 4, name: "Anjali Patel", email: "anjali@example.com", role: "Customer", status: "Active", img: "https://via.placeholder.com/150" },
-	{ id: 5, name: "Vikram Rao", email: "vikram@example.com", role: "Moderator", status: "Active", img: "https://via.placeholder.com/150" },
+	{ id: 1, name: "Amit Sharma", email: "amit@example.com", role: "Customer", status: "Active", img: "https://flexy-react-dark.netlify.app/assets/3-0594bd0b.jpg" },
+	{ id: 2, name: "Priya Singh", email: "priya@example.com", role: "Admin", status: "Active", img: "https://flexy-react-dark.netlify.app/assets/4-76ce6c0c.jpg" },
+	{ id: 3, name: "Ravi Kumar", email: "ravi@example.com", role: "Customer", status: "Inactive", img: "https://flexy-react-dark.netlify.app/assets/1-32ddcd87.jpg" },
+	{ id: 4, name: "Anjali Patel", email: "anjali@example.com", role: "Customer", status: "Active", img: "https://flexy-react-dark.netlify.app/assets/2-1c16a104.jpg" },
+	{ id: 5, name: "Vikram Rao", email: "vikram@example.com", role: "Moderator", status: "Inactive", img: "https://flexy-react-dark.netlify.app/assets/3-0594bd0b.jpg" },
+];
+
+
+export const userInsightsData = [
+  { name: "18-24", value: 18 },
+  { name: "25-34", value: 35 },
+  { name: "35-44", value: 22 },
+  { name: "45-54", value: 12 },
+  { name: "55+", value: 13 },
 ];
 
 
