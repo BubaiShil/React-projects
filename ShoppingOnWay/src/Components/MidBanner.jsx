@@ -6,7 +6,7 @@ import banner from '../assets/images/banner.webp';
 
 const MidBanner = () => {
   return (
-    <div className='md:mt-3 h-[43rem] flex gap-2 mx-2'>
+    <div className='md:my-16 h-[43rem] flex gap-2 mx-2'>
 
       <div className='hidden md:block md:w-[50%] group md:relative'>
         <img 

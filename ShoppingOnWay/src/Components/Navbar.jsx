@@ -24,10 +24,10 @@ const Navbar = () => {
           <h3 className="" onClick={() => navigate("/")}>
             Home
           </h3>
-          <h3 className="" onClick={() => navigate("/contact")}>
+          <h3 className="">
             Contact
           </h3>
-          <h3 className="" onClick={() => navigate("/about")}>
+          <h3 className="">
             About Us
           </h3>
         </div>

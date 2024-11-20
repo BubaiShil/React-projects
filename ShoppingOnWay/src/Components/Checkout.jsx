@@ -9,19 +9,19 @@ const Checkout = ({total}) => {
   
         <div className="flex justify-between items-center mb-4">
           <p className="text-lg">Subtotal:</p>
-          <p className="text-lg font-semibold">${total.toFixed(2)}</p>
+          <p className="text-lg font-semibold">₹{total.toFixed(2)}</p>
         </div>
   
         <div className="flex justify-between items-center mb-4">
           <p className="text-lg">Extra-Discount:</p>
-          <p className="text-lg font-semibold text-red-500">-$99</p>
+          <p className="text-lg font-semibold text-red-500">-₹99</p>
         </div>
   
         <hr className="my-4" />
   
         <div className="flex justify-between items-center mb-6">
           <p className="text-xl font-semibold">Total:</p>
-          <p className="text-xl font-bold">${total-99}</p>
+          <p className="text-xl font-bold">₹{total-99}</p>
         </div>
   
         <button className="md:mx-32 flex justify-center font-bold bg-black text-white py-4 rounded-lg hover:bg-gray-500 transition-all">
