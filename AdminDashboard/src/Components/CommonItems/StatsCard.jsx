@@ -10,6 +10,7 @@ const StatsCard = ({
   icontxcolor,
   amount,
   userArea,
+  height
 }) => {
   return (
     <div className="">

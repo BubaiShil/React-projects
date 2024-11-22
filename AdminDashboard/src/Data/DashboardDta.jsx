@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const salesData = [
-  { name: "Jan", sales: 7000 },
-  { name: "Feb", sales: 6800 },
+  { name: "Jan", sales: 5000 },
+  { name: "Feb", sales: 6000 },
   { name: "Mar", sales: 7700 },
   { name: "April", sales: 7500 },
   { name: "May", sales: 8300 },
