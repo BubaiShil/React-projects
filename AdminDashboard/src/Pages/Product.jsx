@@ -8,7 +8,7 @@ import ProductTablw from "../Components/ProductEl/ProductTablw";
 const Product = () => {
   return (
     <div className="h-full mx-5 mt-5">
-      <div className="grid grid-cols-4 h-[30%] gap-5 bg-pink-200">
+      <div className="grid grid-cols-4 h-[30%] gap-5">
         <StatsCard
           name="Top Selling"
           icon={<TrendingUp />}

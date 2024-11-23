@@ -12,7 +12,7 @@ import {
 
 const SalesAreaChrt = () => {
   return (
-    <div className="p-6 pb-0">
+    <div className="p-6 pb-0 bg-[#33373E] rounded-3xl w-[48rem]">
       <h2 className="text-xl md:text-2xl font-semibold text-[#E5E7EB] mb-4">
         Sales Overview
       </h2>

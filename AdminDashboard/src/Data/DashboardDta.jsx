@@ -114,6 +114,18 @@ export const categoryData = [
   { name: "Sports & Outdoor Gear", value: 2500 },
 ];
 
+
+export const dailySalesData = [
+  { day: "Monday", sales: 1200 },
+  { day: "Tuesday", sales: 1500 },
+  { day: "Wednesday", sales: 1800 },
+  { day: "Thursday", sales: 2000 },
+  { day: "Friday", sales: 2500 },
+  { day: "Saturday", sales: 3000 },
+  { day: "Sunday", sales: 2800 },
+];
+
+
 export const MONTHLY_ACTIVE_USERS = [
   { month: "January", users: 2000 },
   { month: "February", users: 2500 },
