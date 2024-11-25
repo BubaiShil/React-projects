@@ -115,6 +115,37 @@ export const categoryData = [
 ];
 
 
+export const dailyOrdersData = [
+  { date: "07/01", orders: 50 },
+  { date: "07/02", orders: 65 },
+  { date: "07/03", orders: 55 },
+  { date: "07/04", orders: 70 },
+  { date: "07/05", orders: 68 },
+  { date: "07/06", orders: 72 },
+  { date: "07/07", orders: 78 },
+];
+
+export const orderStatusData = [
+  { name: "Pending", value: 20 },
+  { name: "Processing", value: 35 },
+  { name: "Shipped", value: 50 },
+  { name: "Delivered", value: 100 },
+];
+
+export const orderData = [
+  { id: "ORD101", customer: "Emma Wilson", total: 320.5 * 83, status: "Shipped", date: "2023-09-01" }, 
+  { id: "ORD102", customer: "Liam Brown", total: 450.0 * 83, status: "Delivered", date: "2023-09-02" }, 
+  { id: "ORD103", customer: "Olivia Davis", total: 275.3 * 83, status: "Pending", date: "2023-09-03" }, 
+  { id: "ORD104", customer: "Noah Johnson", total: 810.4 * 83, status: "Processing", date: "2023-09-04" }, 
+  { id: "ORD105", customer: "Sophia Moore", total: 125.9 * 83, status: "Shipped", date: "2023-09-05" }, 
+  { id: "ORD106", customer: "James Garcia", total: 380.25 * 83, status: "Pending", date: "2023-09-06" }, 
+  { id: "ORD107", customer: "Isabella Martinez", total: 200.7 * 83, status: "Delivered", date: "2023-09-07" }, 
+  { id: "ORD108", customer: "Mason Taylor", total: 210.4 * 83, status: "Processing", date: "2023-09-08" }, 
+];
+
+
+
+
 export const dailySalesData = [
   { day: "Monday", sales: 1200 },
   { day: "Tuesday", sales: 1500 },

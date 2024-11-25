@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Edit, Search, Trash2 } from "lucide-react";
+import { Search} from "lucide-react";
 import { userData } from "../../Data/DashboardDta";
 
 const UserTable = () => {

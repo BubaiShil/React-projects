@@ -1,21 +1,21 @@
-import React from "react";
+import React from 'react'
+import { orderStatusData } from '../../Data/DashboardDta'
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer, Label } from 'recharts';
-import { userInsightsData } from "../../Data/DashboardDta";
 
-const UserCOLpieCh = () => {
-  const COLORS = ["#216B6C", "#2C8182", "#3E9495", "#4DA8A9", "#184D4E"];
+const OrderPie = () => {
+  const COLORS = ["#216B6C", "#2C8182", "#3E9495", "#4DA8A9", "#184D4E"].reverse();
 
 
   return (
-    <div className="p-6 px-2">
+    <div className="p-6 px-2 bg-[#33373E] rounded-3xl mt-6">
       <h1 className="font-semibold text-[#e1e6ed] text-2xl px-6">
-        User Insights
+      Order Status Breakdown
       </h1>
       <div>
         <ResponsiveContainer width="100%" height={400}>
           <PieChart>
             <Pie
-              data={userInsightsData}
+              data={orderStatusData}
               dataKey="value"
               nameKey="name"
               outerRadius={150}
@@ -34,7 +34,7 @@ const UserCOLpieCh = () => {
                 </text>
               )}
             >
-              {userInsightsData.map((entry, index) => (
+              {orderStatusData.map((entry, index) => (
                 <Cell
                   key={`cell-${index}`}
                   fill={COLORS[index % COLORS.length]}
@@ -51,6 +51,6 @@ const UserCOLpieCh = () => {
       </div>
     </div>
   );
-};
+}
 
-export default UserCOLpieCh;
+export default OrderPie
