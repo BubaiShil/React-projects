@@ -14,7 +14,7 @@ const User = () => {
           icon={<UsersIcon />}
           iconbgcolor="bg-[#FFF4E5]"
           icontxcolor="text-[#ffb74d]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
           amount="1,23,286"
         />
@@ -23,7 +23,7 @@ const User = () => {
           icon={<UserPlus />}
           iconbgcolor="bg-[#EBFAF2]"
           icontxcolor="text-[#4caf50]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
           amount="326"
         />
@@ -32,7 +32,7 @@ const User = () => {
           icon={<UserCheck />}
           iconbgcolor="bg-[#E5FAFB]"
           icontxcolor="text-[#2196f3]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
           amount="82,561"
         />
@@ -41,7 +41,7 @@ const User = () => {
           icon={<UserX />}
           iconbgcolor="bg-[#FDF3F5]"
           icontxcolor="text-[#f44336]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
           amount="3.6%"
         />

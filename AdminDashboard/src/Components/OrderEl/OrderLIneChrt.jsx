@@ -17,7 +17,12 @@ const OrderLIneChrt = () => {
       <h1 className="font-semibold text-[#e1e6ed] text-2xl px-6">Daily Orders</h1>
       <div>
         <ResponsiveContainer width="100%" height={400} className='pt-6'>
-          <LineChart data={dailyOrdersData}>
+          <LineChart data={dailyOrdersData} margin={{
+              top: 20,
+              right: 10,
+              left: 5,
+              bottom: 5,
+            }}>
             <CartesianGrid stroke="#5c6066" strokeDasharray="3 3"/>
             <XAxis dataKey="date" stroke="#aeafb0"/>
             <YAxis stroke="#aeafb0"/>

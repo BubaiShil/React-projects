@@ -18,7 +18,7 @@ const OrderPie = () => {
               data={orderStatusData}
               dataKey="value"
               nameKey="name"
-              outerRadius={150}
+              outerRadius={110}
               fill="#8884d8"
               labelLine={false}
               label={({ name, percent, x, y }) => (

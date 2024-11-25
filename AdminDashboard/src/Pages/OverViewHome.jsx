@@ -41,7 +41,7 @@ const OverViewHome = () => {
               icontxcolor="text-[#ECF0F2]"
               classNam="bg-[#32363E] pb-8 md:pb-0"
               fontsizz="text-xl"
-              amount="₹35,562"
+              amount="35,562"
             />
             <StatsCard
               name="Conversion Rate"

@@ -8,13 +8,13 @@ import OrderTble from "../Components/OrderEl/OrderTble";
 const Orders = () => {
   return (
     <div className="h-full mx-5 mt-5">
-      <div className="grid grid-cols-1 h-[30%] md:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 md:h-[30%] md:grid-cols-4 gap-5">
         <StatsCard
           name="Orders Count"
           icon={<ShoppingBag />}
           iconbgcolor="bg-[#E5FAFB]"
           icontxcolor="text-[#13727A]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
           amount="2,056"
           subpart="+38%"
@@ -24,7 +24,7 @@ const Orders = () => {
           icon={<Clock />}
           iconbgcolor="bg-[#FDF3F5]"
           icontxcolor="text-[#F87171]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
           amount="42"
         />
@@ -33,7 +33,7 @@ const Orders = () => {
           icon={<CheckCircle />}
           iconbgcolor="bg-[#FFF4E5]"
           icontxcolor="text-[#FEC90F]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
           amount="1,538"
         />
@@ -42,7 +42,7 @@ const Orders = () => {
           icon={<DollarSign />}
           iconbgcolor="bg-[#EBFAF2]"
           icontxcolor="text-[#00C292]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
           amount="₹5,32,424"
           subpart="+58%"

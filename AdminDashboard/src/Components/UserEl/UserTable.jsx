@@ -20,8 +20,8 @@ const UserTable = () => {
 
   return (
     <div className="mx-6">
-      <div className="flex items-center justify-between p-4">
-        <h2 className="text-white text-2xl font-semibold tracking-tighter">
+      <div className="flex flex-col md:flex-row items-center justify-between p-4">
+        <h2 className="text-white text-2xl font-semibold tracking-tighter p-4">
           Users List
         </h2>
         <div className="relative">

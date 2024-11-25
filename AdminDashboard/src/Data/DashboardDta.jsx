@@ -1,12 +1,22 @@
 import React from "react";
+import earphones from "../Data/pics/earphones.jpg";
+import coffe from "../Data/pics/coffe.jpg";
+import yoga from "../Data/pics/yoga.jpg";
+import watch from "../Data/pics/watch.jpg";
+import wallet from "../Data/pics/wallet.jpg";
+import pic1 from "../Data/pics/pic1.jpg";
+import pic2 from "../Data/pics/pic2.jpg";
+import pic3 from "../Data/pics/pic3.jpg";
+import pic4 from "../Data/pics/pic4.jpg";
+import pic5 from "../Data/pics/pic5.jpg";
 import {
   BarChart2,
-  ShoppingBag,
-  Users,
+  ShoppingBagIcon,
   DollarSign,
-  ShoppingCart,
-  TrendingUp,
   Settings,
+  Kanban,
+  Users2Icon,
+  ShoppingCartIcon,
 } from "lucide-react";
 
 export const salesData = [
@@ -24,15 +34,48 @@ export const salesData = [
   { name: "Dec", sales: 8100 },
 ];
 
-
 export const userData = [
-	{ id: 1, name: "Amit Sharma", email: "amit@example.com", role: "Customer", status: "Active", img: "https://flexy-react-dark.netlify.app/assets/3-0594bd0b.jpg" },
-	{ id: 2, name: "Priya Singh", email: "priya@example.com", role: "Admin", status: "Active", img: "https://flexy-react-dark.netlify.app/assets/4-76ce6c0c.jpg" },
-	{ id: 3, name: "Ravi Kumar", email: "ravi@example.com", role: "Customer", status: "Inactive", img: "https://flexy-react-dark.netlify.app/assets/1-32ddcd87.jpg" },
-	{ id: 4, name: "Anjali Patel", email: "anjali@example.com", role: "Customer", status: "Active", img: "https://flexy-react-dark.netlify.app/assets/2-1c16a104.jpg" },
-	{ id: 5, name: "Vikram Rao", email: "vikram@example.com", role: "Moderator", status: "Inactive", img: "https://flexy-react-dark.netlify.app/assets/3-0594bd0b.jpg" },
+  {
+    id: 1,
+    name: "Amit Sharma",
+    email: "amit@example.com",
+    role: "Customer",
+    status: "Active",
+    img: pic1,
+  },
+  {
+    id: 2,
+    name: "Priya Singh",
+    email: "priya@example.com",
+    role: "Admin",
+    status: "Active",
+    img: pic2,
+  },
+  {
+    id: 3,
+    name: "Ravi Kumar",
+    email: "ravi@example.com",
+    role: "Customer",
+    status: "Inactive",
+    img: pic3,
+  },
+  {
+    id: 4,
+    name: "Anjali Patel",
+    email: "anjali@example.com",
+    role: "Customer",
+    status: "Active",
+    img: pic4,
+  },
+  {
+    id: 5,
+    name: "Vikram Rao",
+    email: "vikram@example.com",
+    role: "Moderator",
+    status: "Inactive",
+    img: pic5,
+  },
 ];
-
 
 export const userInsightsData = [
   { name: "18-24", value: 18 },
@@ -41,7 +84,6 @@ export const userInsightsData = [
   { name: "45-54", value: 12 },
   { name: "55+", value: 13 },
 ];
-
 
 export const userGrowthData = [
   { month: "Jan", users: 800 },
@@ -66,7 +108,7 @@ export const productData = [
     price: 59.99,
     stock: 143,
     sales: 1200,
-    img: "https://cdn.pixabay.com/photo/2020/09/24/14/51/earphones-5598952_640.jpg",
+    img: earphones,
   },
   {
     id: 2,
@@ -75,7 +117,7 @@ export const productData = [
     price: 39.99,
     stock: 89,
     sales: 800,
-    img: "https://cdn.pixabay.com/photo/2022/02/11/09/21/leather-wallet-7006894_640.jpg",
+    img: wallet,
   },
   {
     id: 3,
@@ -84,7 +126,7 @@ export const productData = [
     price: 199.99,
     stock: 56,
     sales: 650,
-    img: "https://images.unsplash.com/photo-1617625802912-cde586faf331?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNtYXJ0JTIwd2F0Y2hlc3xlbnwwfHwwfHx8MA%3D%3D",
+    img: watch,
   },
   {
     id: 4,
@@ -93,7 +135,7 @@ export const productData = [
     price: 79.99,
     stock: 78,
     sales: 720,
-    img: "https://cdn.pixabay.com/photo/2016/11/19/17/17/beverage-1840426_640.jpg",
+    img: coffe,
   },
   {
     id: 5,
@@ -102,7 +144,7 @@ export const productData = [
     price: 29.99,
     stock: 210,
     sales: 950,
-    img: "https://cdn.pixabay.com/photo/2021/10/03/04/23/yoga-mats-6676903_640.jpg",
+    img: yoga,
   },
 ];
 
@@ -113,7 +155,6 @@ export const categoryData = [
   { name: "Books & Media", value: 2800 },
   { name: "Sports & Outdoor Gear", value: 2500 },
 ];
-
 
 export const dailyOrdersData = [
   { date: "07/01", orders: 50 },
@@ -133,18 +174,63 @@ export const orderStatusData = [
 ];
 
 export const orderData = [
-  { id: "ORD101", customer: "Emma Wilson", total: 320.5 * 83, status: "Shipped", date: "2023-09-01" }, 
-  { id: "ORD102", customer: "Liam Brown", total: 450.0 * 83, status: "Delivered", date: "2023-09-02" }, 
-  { id: "ORD103", customer: "Olivia Davis", total: 275.3 * 83, status: "Pending", date: "2023-09-03" }, 
-  { id: "ORD104", customer: "Noah Johnson", total: 810.4 * 83, status: "Processing", date: "2023-09-04" }, 
-  { id: "ORD105", customer: "Sophia Moore", total: 125.9 * 83, status: "Shipped", date: "2023-09-05" }, 
-  { id: "ORD106", customer: "James Garcia", total: 380.25 * 83, status: "Pending", date: "2023-09-06" }, 
-  { id: "ORD107", customer: "Isabella Martinez", total: 200.7 * 83, status: "Delivered", date: "2023-09-07" }, 
-  { id: "ORD108", customer: "Mason Taylor", total: 210.4 * 83, status: "Processing", date: "2023-09-08" }, 
+  {
+    id: "ORD101",
+    customer: "Emma Wilson",
+    total: 320.5 * 83,
+    status: "Shipped",
+    date: "2023-09-01",
+  },
+  {
+    id: "ORD102",
+    customer: "Liam Brown",
+    total: 450.0 * 83,
+    status: "Delivered",
+    date: "2023-09-02",
+  },
+  {
+    id: "ORD103",
+    customer: "Olivia Davis",
+    total: 275.3 * 83,
+    status: "Pending",
+    date: "2023-09-03",
+  },
+  {
+    id: "ORD104",
+    customer: "Noah Johnson",
+    total: 810.4 * 83,
+    status: "Processing",
+    date: "2023-09-04",
+  },
+  {
+    id: "ORD105",
+    customer: "Sophia Moore",
+    total: 125.9 * 83,
+    status: "Shipped",
+    date: "2023-09-05",
+  },
+  {
+    id: "ORD106",
+    customer: "James Garcia",
+    total: 380.25 * 83,
+    status: "Pending",
+    date: "2023-09-06",
+  },
+  {
+    id: "ORD107",
+    customer: "Isabella Martinez",
+    total: 200.7 * 83,
+    status: "Delivered",
+    date: "2023-09-07",
+  },
+  {
+    id: "ORD108",
+    customer: "Mason Taylor",
+    total: 210.4 * 83,
+    status: "Processing",
+    date: "2023-09-08",
+  },
 ];
-
-
-
 
 export const dailySalesData = [
   { day: "Monday", sales: 1200 },
@@ -155,7 +241,6 @@ export const dailySalesData = [
   { day: "Saturday", sales: 3000 },
   { day: "Sunday", sales: 2800 },
 ];
-
 
 export const MONTHLY_ACTIVE_USERS = [
   { month: "January", users: 2000 },
@@ -180,15 +265,19 @@ export const SALES_CHANNEL_DATA = [
 ];
 
 export const SIDEBAR_ITEMS = [
-  { name: "Overview", icon: <BarChart2 color="#03C9D7" />, href: "/" },
+  { name: "Overview", icon: <Kanban color="#03C9D7" />, href: "/" },
   {
     name: "Products",
-    icon: <ShoppingBag color="#03C9D7" />,
+    icon: <ShoppingBagIcon color="#03C9D7" />,
     href: "/products",
   },
   { name: "Sales", icon: <DollarSign color="#03C9D7" />, href: "/sales" },
-  { name: "Users", icon: <Users color="#03C9D7" />, href: "/users" },
-  { name: "Orders", icon: <ShoppingCart color="#03C9D7" />, href: "/orders" },
+  { name: "Users", icon: <Users2Icon color="#03C9D7" />, href: "/users" },
+  {
+    name: "Orders",
+    icon: <ShoppingCartIcon color="#03C9D7" />,
+    href: "/orders",
+  },
   { name: "Settings", icon: <Settings color="#03C9D7" />, href: "/settings" },
 ];
 

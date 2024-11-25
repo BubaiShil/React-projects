@@ -21,14 +21,14 @@ const OrderTble = () => {
 
   return (
     <div className="pt-5">
-      <div className="flex items-center justify-between p-8">
-        <h2 className="text-white text-2xl font-semibold tracking-tighter">
+      <div className="flex flex-col md:flex-row items-center justify-between p-8">
+        <h2 className="text-white text-2xl font-semibold tracking-tighter p-4">
           Order List
         </h2>
         <div className="relative">
           <input
             type="text"
-            placeholder="Search users..."
+            placeholder="Search orders..."
             onChange={handleFilter}
             value={inpData}
             className="bg-[#767E89] text-white placeholder-white rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#13727A]"
@@ -59,7 +59,7 @@ const OrderTble = () => {
             </tr>
           </thead>
 
-          <tbody>
+          <tbody className="">
             {filteredDta.map((e) => (
               <tr key={e.id}>
                 <td className="px-6 py-4 whitespace-nowrap text-center">
