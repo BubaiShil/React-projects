@@ -10,10 +10,11 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+// lg:w-[48rem]
 const SalesAreaChrt = () => {
   return (
-    <div className="p-6 pb-0 bg-[#33373E] rounded-3xl w-[48rem]">
-      <h2 className="text-xl md:text-2xl font-semibold text-[#E5E7EB] mb-4">
+    <div className="md:p-6 pb-0 bg-[#33373E] rounded-3xl  lg:w-[70%]">
+      <h2 className="text-xl md:text-2xl font-semibold text-[#E5E7EB] mb-4 md:p-4 p-6 pb-0">
         Sales Overview
       </h2>
       

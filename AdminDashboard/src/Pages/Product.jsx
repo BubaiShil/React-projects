@@ -8,13 +8,13 @@ import ProductTablw from "../Components/ProductEl/ProductTablw";
 const Product = () => {
   return (
     <div className="h-full mx-5 mt-5">
-      <div className="grid grid-cols-4 h-[30%] gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-4 md:h-[30%] gap-5">
         <StatsCard
           name="Top Selling"
           icon={<TrendingUp />}
           iconbgcolor="bg-[#E5FAFB]"
           icontxcolor="text-[#13727A]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
           amount='56'
           subpart="+38%"
@@ -24,7 +24,7 @@ const Product = () => {
           icon={<Package />}
           iconbgcolor="bg-[#FFF4E5]"
           icontxcolor="text-[#FEC90F]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
           amount="32,424"
           subpart="+23%"
@@ -34,7 +34,7 @@ const Product = () => {
           icon={<AlertTriangle />}
           iconbgcolor="bg-[#FDF3F5]"
           icontxcolor="text-[#F87171]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
           amount="38"
         />
@@ -43,15 +43,15 @@ const Product = () => {
           icon={<FaDollarSign />}
           iconbgcolor="bg-[#EBFAF2]"
           icontxcolor="text-[#00C292]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 md:pb-0"
           fontsizz="text-[2rem]"
-          amount="$5,32,424"
+          amount="₹5,32,424"
           subpart="+58%"
         />
       </div>
 
-      <div className="flex gap-6 mt-8 w-full h-[70%]">
-        <div className="bg-[#33373E] w-[35%] rounded-3xl">
+      <div className="flex flex-col md:flex-row gap-6 mt-8 w-full h-[70%]">
+        <div className="bg-[#33373E] md:w-[35%] rounded-3xl">
           <div className="flex justify-between items-center p-6">
             <h1 className="text-2xl font-medium text-white tracking-tighter">Total Sales</h1>
             <select name="DEC 2024" id="" className="p-3 focus:outline-none rounded-xl bg-[#767E89] text-[#E6E5E8] border-none font-medium ">
@@ -67,7 +67,7 @@ const Product = () => {
           </div>
           <PiechartProd/>
         </div>
-        <div className="bg-[#33373E] w-[65%] rounded-3xl"><ProductTablw/></div>
+        <div className="bg-[#33373E] md:w-[65%] rounded-3xl"><ProductTablw/></div>
       </div>
     </div>
   );

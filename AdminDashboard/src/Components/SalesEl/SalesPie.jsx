@@ -17,7 +17,7 @@ const SalesPie = () => {
             data={categoryData}
             cx="50%"
             cy="50%"
-            outerRadius={120} // Reduced radius
+            outerRadius={80} // Reduced radius
             fill="#8884d8"
             dataKey="value"
             label={({ name, percent, x, y }) => (

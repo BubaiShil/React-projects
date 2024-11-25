@@ -19,10 +19,10 @@ const OverViewHome = () => {
               icon={<FaDollarSign />}
               iconbgcolor="bg-[#ECF0F2]"
               icontxcolor="text-[#1F1F1F]"
-              classNam="bg-[#13727A]"
+              classNam="bg-[#13727A] pb-8 md:pb-0"
               fontsizz="text-[2rem]"
               subpart="Monthly Revenue"
-              amount="$1,32,424"
+              amount="₹6,32,424"
             />
             <StatsCard
               name="New Users"
@@ -39,16 +39,16 @@ const OverViewHome = () => {
               icon={<AiTwotoneThunderbolt />}
               iconbgcolor="bg-[#02B3A9]"
               icontxcolor="text-[#ECF0F2]"
-              classNam="bg-[#32363E]"
+              classNam="bg-[#32363E] pb-8 md:pb-0"
               fontsizz="text-xl"
-              amount="$35,562"
+              amount="₹35,562"
             />
             <StatsCard
               name="Conversion Rate"
               icon={<GiNetworkBars />}
               iconbgcolor="bg-[#02B3A9]"
               icontxcolor="text-[#ECF0F2]"
-              classNam="bg-[#32363E]"
+              classNam="bg-[#32363E] pb-8 md:pb-0"
               fontsizz="text-xl"
               amount="15.6%"
             />

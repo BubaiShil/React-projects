@@ -14,69 +14,67 @@ import SalesPie from "../Components/SalesEl/SalesPie";
 
 const Sales = () => {
   return (
-    <div className="h-full mx-5 mt-5">
-      <div className="flex flex-row md:flex-col lg:flex-row gap-5 h-[30%] ">
+    <div className="h-full mx-5 mt-5 ">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-5 lg:h-[30%]  w-full">
         <StatsCard
           name="Sales Figures"
           icon={<GiNetworkBars />}
           iconbgcolor="bg-[#02B3A9]"
           icontxcolor="text-[#ECF0F2]"
-          classNam="bg-[#33373E] "
+          classNam="bg-[#33373E] pb-8 lg:pb-0 "
           fontsizz="text-[2rem]"
           amount="5,325,235"
-          width="w-[30rem]"
           subpart="Revenue Breakdown ↗ +6%"
         />
 
+        {/* width="lg:w-[35vw]" */}
         <StatsCard
           name="Average order amount"
           icon={<ShoppingCart />}
           iconbgcolor="bg-[#02B3A9]"
           icontxcolor="text-[#ECF0F2]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 lg:pb-0 "
           fontsizz="text-[2rem]"
           amount="₹868.02"
-          width="w-[16.3rem]"
           subpart="Per-order average"
         />
-
+        {/* width="lg:w-[22vw]" */}
         <StatsCard
           name="Total Earnings"
           icon={<DollarSign />}
           iconbgcolor="bg-[#02B3A9]"
           icontxcolor="text-[#ECF0F2]"
-          classNam="bg-[#33373E]"
+          classNam="bg-[#33373E] pb-8 lg:pb-0 "
           fontsizz="text-[2rem]"
           amount="₹1,23,286"
-          width="w-[25.7rem]"
           subpart="Monthly Revenue"
         />
+        {/* width="lg:w-[25vw]" */}
       </div>
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 mt-6 gap-5 w-full">
-        <div className="grid grid-cols-1">
-          <SalesAreaChrt />
-        </div>
-        <div className="grid grid-cols-1 gap-5 md:ml-44">
+      <div className="flex flex-col lg:flex-row mt-6 gap-5 w-full">
+        <SalesAreaChrt />
+
+        <div className="flex flex-col lg:gap-24  gap-6 mt-5 md:mt-0 lg:w-[34%]">
           <StatsCard
             name="Conversion Rate"
             icon={<TrendingUp />}
             iconbgcolor="bg-[#ECF0F2]"
             icontxcolor="text-[#1F1F1F]"
-            classNam="bg-[#13727A]"
+            classNam="bg-[#13727A] pb-8 lg:pb-5 "
             fontsizz="text-[2rem]"
             amount="15.6%"
-            width="w-[25.7rem]"
+            height="md:h-[140%]"
           />
           <StatsCard
             name="Sales Growth"
             icon={<CreditCard />}
             iconbgcolor="bg-[#f5c9c9]"
             icontxcolor="text-[#F87171]"
-            classNam="bg-[#0DD0C6]"
+            classNam="bg-[#0DD0C6] pb-8 lg:pb-4 "
             fontsizz="text-[2rem]"
             amount="12.3%"
-            width="w-[25.7rem]"
+            height="md:h-[140%]"
           />
         </div>
       </div>
@@ -91,3 +89,5 @@ const Sales = () => {
 };
 
 export default Sales;
+
+// width="w-full lg:w-[25.7rem] "

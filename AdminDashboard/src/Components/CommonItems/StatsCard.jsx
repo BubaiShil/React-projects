@@ -10,12 +10,13 @@ const StatsCard = ({
   icontxcolor,
   amount,
   userArea,
-  width
+  width,
+  height
 }) => {
   return (
     <div className="">
       <div
-        className={`h-full rounded-3xl overflow-hidden shadow-lg ${classNam} ${width} transform hover:scale-105 transition-transform duration-300`}
+        className={`h-full rounded-3xl overflow-hidden shadow-lg ${classNam} ${width} ${height} transform hover:scale-105 transition-transform duration-300`}
       >
         <div className="p-6 pb-0 flex justify-between">
           <h2 className="text-xl font-bold text-white">{name}</h2>

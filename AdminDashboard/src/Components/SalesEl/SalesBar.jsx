@@ -12,7 +12,7 @@ import { dailySalesData } from "../../Data/DashboardDta";
 
 const SalesBar = () => {
   return (
-    <div className="md:p-6 p-3 bg-[#33373E] pb-0 w-full rounded-3xl">
+    <div className="p-6 bg-[#33373E] pb-0 w-full rounded-3xl">
       <h2 className="text-xl md:text-2xl font-semibold text-[#E5E7EB] mb-4">
         Daily Sales Trend
       </h2>
@@ -23,8 +23,8 @@ const SalesBar = () => {
           data={dailySalesData} 
           margin={{
             top: 20,
-            right: 30,
-            left: 20,
+            right: 0,
+            left: 0,
             bottom: 5,
           }}
         >

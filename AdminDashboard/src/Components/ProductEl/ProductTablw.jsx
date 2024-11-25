@@ -20,8 +20,8 @@ const ProductTablw = () => {
 
   return (
     <div className="mx-6">
-      <div className="flex items-center justify-between p-4">
-        <h2 className="text-white text-2xl font-semibold tracking-tighter">
+      <div className="flex items-center justify-between p-4 flex-col md:flex-row">
+        <h2 className="text-white text-2xl font-semibold tracking-tighter pb-4">
           Product List
         </h2>
         <div className="relative">

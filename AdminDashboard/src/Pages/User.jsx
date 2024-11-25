@@ -8,7 +8,7 @@ import UserCOLpieCh from "../Components/UserEl/UserCOLpieCh";
 const User = () => {
   return (
     <div className="h-full mx-5 mt-5">
-      <div className="grid grid-cols-4 h-[25%] gap-5 ">
+      <div className="grid grid-cols-1 md:grid-cols-4 md:h-[25%] gap-5 ">
         <StatsCard
           name="Total User"
           icon={<UsersIcon />}
