@@ -55,7 +55,7 @@ const Orders = () => {
         <OrderPie />
       </div>
 
-      <div className="bg-[#33373E] mt-8 rounded-3xl h-full">
+      <div className="bg-[#33373E] mt-8 p- rounded-3xl h-full">
         <OrderTble />
       </div>
     </div>

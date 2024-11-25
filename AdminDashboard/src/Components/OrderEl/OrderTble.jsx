@@ -20,9 +20,9 @@ const OrderTble = () => {
   };
 
   return (
-    <div className="pt-5">
+    <div className="pt-0">
       <div className="flex flex-col md:flex-row items-center justify-between p-8">
-        <h2 className="text-white text-2xl font-semibold tracking-tighter p-4">
+        <h2 className="text-white text-2xl font-semibold tracking-tighter pb-4">
           Order List
         </h2>
         <div className="relative">
